@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Detours</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Bootstrap !Change from bootstrap.min.css to bootstrap.css -->
+    <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/mdb.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.js"></script>
+
+    <!-- MDB: https://mdbootstrap.com/md-bootstrap-cdn/ -->
+    <!-- Material Design Bootstrap -->
+    <script href="../js/mdb.js" rel="text/javascript"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
+
+    <!-- Custom fonts for this template -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- CSS !Keep this at the end of head element -->
+    <link rel="stylesheet" href="../css/base.css" >
+
+  </head>
+
+	<body class="bg-light">
+		<!---------- Navigation Bar ---------->
+		<nav class="navbar navbar-default" style="border: 0px;">
+			<div class="container-fluid" style="display: inline;">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+				  </button>
+				  <a class="navbar-brand text-primary" href="index.html">Detours</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				  <ul class="nav navbar-nav">
+					  <li class="active"><a href="#">Home</a></li>
+					  <li class="dropdown">
+					    <a class="dropdown-toggle" href="#" style="color: #007bff;">Destinations</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">North America</a></li>
+                <li><a href="#">South America</a></li>
+                <li><a href="#">Europe</a></li>
+                <li><a href="#">Asia</a></li>
+              </ul>
+            </li>
+					  <li class="dropdown">
+					    <a class="dropdown-toggle" href="#" style="color: #007bff;">Agents</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Agent 1</a></li>
+                <li><a href="#">Agent 2</a></li>
+                <li><a href="#">Agent 3</a></li>
+                <li><a href="#">Agent 4</a></li>
+              </ul>
+					  </li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-li"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li class="nav-li"><a href="" class="btn" data-toggle="modal" data-target="#modalLRForm">
+              <span class="glyphicon glyphicon-log-in">
+              </span> Log in</a>
+            </li>
+
+            <!--Modal: Login / Register Form-->
+            <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog cascading-modal" role="document">
+              <!--Content-->
+              <div class="modal-content">
+                  <!--Modal cascading tabs-->
+                  <div class="modal-c-tabs">
+                    
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="glyphicon glyphicon-log-in mr-1"></i>
+                          Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                          Register</a>
+                      </li>
+                    </ul>
+            
+                    <!-- Tab panels -->
+                    <div class="tab-content">
+                      <!--Panel 7-->
+                      <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+            
+                        <!--Body-->
+                        <div class="modal-body mb-1">
+                          <div class="md-form form-sm mb-5">
+                            <i class="fas fa-envelope prefix"></i>
+                            <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                            <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                          </div>
+            
+                          <div class="md-form form-sm mb-4">
+                            <i class="fas fa-lock prefix"></i>
+                            <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                            <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                          </div>
+                          <div class="text-center mt-2">
+                            <button class="btn btn-info bg-primary">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                          </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                          <div class="options text-center text-md-right mt-1">
+                            <p>Not a member? <a href="#" class="text-primary">Sign Up</a></p>
+                            <p>Forgot <a href="#" class="text-primary">Password?</a></p>
+                          </div>
+                          <button type="button" class="btn btn-outline-info ml-auto" data-dismiss="modal">Close</button>
+                        </div>
+            
+                      </div>
+                      <!--/.Panel 7-->
+            
+                      <!--Panel 8-->
+                      <div class="tab-pane fade" id="panel8" role="tabpanel">
+            
+                        <!--Body-->
+                        <div class="modal-body">
+                          <div class="md-form form-sm mb-5">
+                            <i class="fas fa-envelope prefix"></i>
+                            <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                            <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                          </div>
+            
+                          <div class="md-form form-sm mb-5">
+                            <i class="fas fa-lock prefix"></i>
+                            <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                            <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                          </div>
+            
+                          <div class="md-form form-sm mb-4">
+                            <i class="fas fa-lock prefix"></i>
+                            <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                            <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                          </div>
+            
+                          <div class="text-center form-sm mt-2">
+                            <button class="btn btn-info bg-primary">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                          </div>
+            
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                          <div class="options text-right">
+                            <p class="pt-1">Already have an account? <a href="#" class="text-primary">Log In</a></p>
+                          </div>
+                          <button type="button" class="btn btn-outline-info ml-auto" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                      <!--/.Panel 8-->
+                    </div>
+            
+                  </div>
+                </div>
+                <!--/.Content-->
+              </div>
+            </div>
+            <!--Modal: Login / Register Form-->
+   
+          </ul>
+				</div>
+			</div>
+		</nav>
+
+		<!---------- Slide Show ---------->
+		<div class="container">
+		  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="max-height: 550px;">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!---------- Wrapper for slides ---------->
+        <div class="carousel-inner">
+          <div class="item active">
+          <img src="../img/goldgate.jpg" alt="Golden Gate Bridge" style="width:100%;">
+          <div class="carousel-caption">
+            <h5>Golden Gate Bridge</h5>
+            <p>Golden Gate Bridge description here.</p>
+          </div>
+          </div>
+
+          <div class="item">
+          <img src="../img/rome.jpg" alt="Rome" style="width:100%;">
+          <div class="carousel-caption">
+            <h5>Rome</h5>
+            <p>Rome description here.</p>
+          </div>
+          </div>
+          
+          <div class="item">
+          <img src="../img/kayak.jpg" alt="Kayak" style="width:100%;">
+          <div class="carousel-caption">
+            <h5>Kayak</h5>
+            <p>Kayak description here.</p>
+          </div>
+          </div>
+          
+          <div class="item">
+          <img src="../img/quebec.jpg" alt="Quebec" style="width:100%;">
+          <div class="carousel-caption">
+            <h5>Quebec</h5>
+            <p>Quebec description here.</p>
+          </div>
+          </div>
+          
+          <div class="item">
+          <img src="../img/sydney_opera.jpg" alt="Golden Gate Bridge" style="width:100%;">
+          <div class="carousel-caption">
+            <h5>Sydney Opera</h5>
+            <p>Sydney Opera description here.</p>
+          </div>
+          </div>
+        </div>
+
+        <!---------- Left and right controls  ---------->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+		  </div>
+		</div>
+
+    <!-- Icons: https://mdbootstrap.com/docs/jquery/content/icons-list/ -->
+    <section class="features-icons bg-light text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fas fa-clipboard-list m-auto text-primary"></i>
+              </div>
+              <h3>Best Selection</h3>
+              <p class="lead mb-0">Our strict screening process means that you're only seeing the best quality tours.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fas fa-tags m-auto text-primary"></i>
+              </div>
+              <h3>Best Price Guarantee</h3>
+              <p class="lead mb-0">Found a lower price elsewhere? We'll match it!</p>
+            </div>
+          </div>
+          <div class="col-lg-4 text">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="far fa-credit-card m-auto text-primary"></i>
+              </div>
+              <h3>Secure Payments</h3>
+              <p class="lead mb-0">We use Braintree, a subsidiary of PayPal, to make payments safe and secure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Showcases -->
+    <section class="showcase">
+        <div class="container-fluid bg-white">
+          <div class="row no-gutters">
+    
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../img/bg-showcase-1.jpg');"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+              <h2>Korea</h2>
+              <p class="lead mb-0">In occaecat officia Lorem ut magna sint velit ullamco aute. Veniam enim voluptate anim velit enim ad proident ea do nostrud amet adipisicing. Id do in sit duis minim et mollit ex tempor excepteur. Incididunt laboris velit adipisicing id eiusmod incididunt enim nulla et. Consequat ea do id magna mollit officia qui elit ea. Lorem dolor elit est velit. Incididunt ut et sit non ut officia excepteur ea aute aliqua amet.
+
+Veniam cillum ex fugiat reprehenderit officia ullamco dolore id laboris. Irure nulla aliqua anim enim Lorem sint culpa incididunt et non ad sunt amet pariatur. Ad et minim ea qui eiusmod excepteur mollit ea. Nulla labore tempor ullamco non Lorem consequat duis anim enim elit duis excepteur sit non. Veniam elit duis dolore non proident.
+
+Dolore Lorem sint nulla eiusmod ea et labore labore ad. Incididunt irure sint reprehenderit duis eiusmod id ut cupidatat. Minim dolor proident ex proident pariatur aute sint duis Lorem. Labore veniam dolore Lorem magna nulla reprehenderit id laboris excepteur consequat id ut. Do nulla quis nisi tempor consectetur pariatur amet eiusmod irure amet. Reprehenderit laboris excepteur ad do ea Lorem sunt dolor. In dolore ullamco elit consectetur et veniam.</p>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url('../img/bg-showcase-2.jpg');"></div>
+            <div class="col-lg-6 my-auto showcase-text">
+              <h2>Germany</h2>
+              <p class="lead mb-0">Eu aliqua labore dolore cupidatat adipisicing incididunt ea voluptate exercitation proident. Amet officia mollit quis cillum excepteur incididunt ea nulla. Magna laborum eiusmod eu est proident deserunt aute qui dolor nostrud voluptate incididunt. Eu in cillum reprehenderit nostrud labore occaecat in reprehenderit. Exercitation dolore incididunt pariatur commodo nisi aute tempor Lorem.
+
+Ullamco dolore in in culpa reprehenderit non eu. Elit enim adipisicing velit aliqua pariatur enim excepteur cupidatat commodo eu commodo amet adipisicing ut. Est ut occaecat officia sint excepteur amet sunt deserunt nulla.
+
+Duis exercitation dolore quis cupidatat ex irure ea incididunt ut excepteur eu in veniam aute. Laboris anim qui tempor minim. Adipisicing sit qui dolore ut eu officia et reprehenderit duis. Laborum dolor dolor deserunt est esse anim. Do ad commodo qui ipsum pariatur fugiat anim et aute do enim aute minim incididunt. Tempor culpa nulla exercitation cillum exercitation minim veniam quis. Consequat voluptate anim minim ad ullamco fugiat dolore veniam fugiat ad cillum.</p>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../img/bg-showcase-3.jpg');"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+              <h2>Japan</h2>
+              <p class="lead mb-0">Proident incididunt sunt tempor anim. Exercitation minim minim est nisi do deserunt nisi commodo duis mollit qui exercitation aliqua eu. Exercitation officia aliqua proident ea ex cupidatat. Culpa qui voluptate excepteur ipsum. Adipisicing aliquip consequat aliqua ut qui occaecat veniam cillum qui commodo. Ad ea mollit velit officia ipsum voluptate in proident dolor exercitation nostrud consectetur enim.
+
+Aliqua sint commodo occaecat nostrud magna est ea adipisicing pariatur nostrud occaecat mollit esse. Mollit dolore incididunt culpa excepteur. Quis sunt ea aute elit culpa aliquip duis. Est in Lorem sunt sunt in consectetur id officia.
+
+Nulla occaecat commodo occaecat proident amet veniam do do exercitation elit. Irure non irure ut et aute esse Lorem. Mollit minim fugiat Lorem cillum esse nulla nisi. Quis aute minim ut eu Lorem dolore veniam. Veniam laboris aute fugiat fugiat occaecat.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials text-center bg-light">
+      <div class="container">
+        <h2 class="mb-5">What people are saying...</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="../img/testimonials-1.jpg" alt="">
+              <h5>Margaret E.</h5>
+              <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+              <div class="gold-text">
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="far fa-star-half-alt"> </i>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="../img/testimonials-2.jpg" alt="">
+              <h5>Fred S.</h5>
+              <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+              <div class="gold-text">
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="../img/testimonials-3.jpg" alt="">
+              <h5>Sarah W.</h5>
+              <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+              <div class="gold-text">
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="far fa-star"> </i>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="call-to-action text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form>
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                  <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+                </div>
+                <div class="col-12 col-md-3">
+                  <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer: https://www.w3schools.com/icons/fontawesome5_icons_brands.asp; ../vendor/simple-line-icons/css/simple-line-icons.css -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="about.html">About</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="contact.html">Contact</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="terms.html">Terms of Use</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="privacy.html">Privacy Policy</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">Copyright &copy; 2019 Detours, Inc. All Rights Reserved.</p>
+          </div>
+
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a target="_blank" href="https://www.facebook.com">
+                  <i class="fab fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a target="_blank" href="https://www.linkedin.com">
+                  <i class="fab fa-linkedin fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="https://github.com">
+                  <i class="fab fa-github fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
+
+  </body>
+
+</html>
