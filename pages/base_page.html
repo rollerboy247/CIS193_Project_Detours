@@ -4,68 +4,76 @@
 		<title>Detours</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="../css/base.css" >
+
+		<!-- Bootstrap !Change from bootstrap.min.css to bootstrap.css -->
+		<link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="../vendor/bootstrap/css/mdb.css" rel="stylesheet">
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.js"></script>
+
+		<!-- MDB: https://mdbootstrap.com/md-bootstrap-cdn/ -->
+		<!-- Material Design Bootstrap -->
+		<script href="../js/mdb.js" rel="text/javascript"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
+
+		<!-- Custom fonts for this template -->
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+		<link href="../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+		<!-- CSS !Keep this at the end of head element -->
+		<link rel="stylesheet" href="../css/base.css" >
+
+		<script>
+			$(function(){
+				$("#navigation").load("navbar.html");
+			});
+		</script>
+		<script>
+			$(function(){
+				$("#botFooter").load("footer.html");
+			});
+		</script>
 	</head>
 
-	<body>
-<!---------- Navigation Bar ---------->
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>                        
-				  </button>
-				  <a class="navbar-brand" href="#">Detours</a>
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-				  <ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li class="dropdown">
-					  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Destinations <span class="caret"></span></a>
-					  <ul class="dropdown-menu">
-						<li><a href="#">North America</a></li>
-						<li><a href="#">South America</a></li>
-						<li><a href="#">Europe</a></li>
-						<li><a href="#">Asia</a></li>
-					  </ul>
-					</li>
-					<li class="dropdown">
-					  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Agents <span class="caret"></span></a>
-					  <ul class="dropdown-menu">
-						<li><a href="#">Person 1</a></li>
-						<li><a href="#">Person 2</a></li>
-						<li><a href="#">Person 3</a></li>
-						<li><a href="#">Person 4</a></li>
-					  </ul>
-					</li>
-					<li><a href="#">About Us</a></li>
-				  </ul>
-				  <ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-				  </ul>
-				</div>
-			</div>
-		</nav>
+	<body class="bg-light">
+		<!---------- Navigation Bar ---------->
+		<div id="navigation"></div>
+		<!---------- Navigation Bar ---------->
 
-<!---------- Put your stuff here! ---------->
+		<!---------PUT YOUR STUFF HERE---------->
 
 
 
-<!------------------------------------------>
+
+
+
+
+
+		<!---------PUT YOUR STUFF HERE---------->
+
+
+		<!-- Footer -->
+		<div id="botFooter"></div>
+		<!-- Footer -->
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="../vendor/jquery/jquery.min.js"></script>
+		<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- JQuery -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
 
 	</body>
-<head>
-	<title>Bootstrap Example</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</head>
-<body>
+
+</html>
