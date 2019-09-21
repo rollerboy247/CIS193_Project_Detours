@@ -7,54 +7,46 @@
 
       <!-- Bootstrap !Change from bootstrap.min.css to bootstrap.css -->
     <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-
+    <link href="../vendor/bootstrap/css/mdb.css" rel="stylesheet">
+  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.js"></script>
+
+    <!-- MDB: https://mdbootstrap.com/md-bootstrap-cdn/ -->
+    <!-- Material Design Bootstrap -->
+    <script href="../js/mdb.js" rel="text/javascript"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
+
     <!-- Custom fonts for this template -->
-    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- CSS !Keep this at the end of head element -->
     <link rel="stylesheet" href="../css/base.css" >
+	
+	<script>
+		$(function(){
+			$("#navigation").load("navbar.html");
+		});
+	</script>
+	<script>
+		$(function(){
+			$("#botFooter").load("footer.html");
+		});
+	</script>
 
   </head>
 
 	<body class="bg-light">
-		<!---------- Navigation Bar ---------->
-		<nav class="navbar navbar-default" style="border: 0px;">
-			<div class="container-fluid" style="display: inline-block;">
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-				  </button>
-				  <a class="navbar-brand" href="index.html">Detours</a>
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-				  <ul class="nav navbar-nav" style="flex-direction: row;">
-					  <li class="active"><a href="#">Home</a></li>
-					  <li class="dropdown">
-					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #007bff;">Destinations</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">North America</a></li>
-                <li><a href="#">South America</a></li>
-                <li><a href="#">Europe</a></li>
-                <li><a href="#">Asia</a></li>
-              </ul>
-					  </li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right" style="flex-direction: row;">
-            <li class="nav-li"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li class="nav-li"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          </ul>
-				</div>
-			</div>
-		</nav>
+<!---------- Navigation Bar ---------->
+		<div id="navigation"></div>
+		<div style="margin-top: 100px;"></div>
+<!---------- Navigation Bar ---------->	
 
     <div class="container">
         <h1>Terms and Conditions for Detours</h1>
@@ -134,57 +126,15 @@
     </div>
 
         
-    <!-- Footer: https://www.w3schools.com/icons/fontawesome5_icons_brands.asp; ../vendor/simple-line-icons/css/simple-line-icons.css -->
-    <footer class="footer bg-light">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-                  <ul class="list-inline mb-2">
-                    <li class="list-inline-item">
-                      <a href="about.html">About</a>
-                    </li>
-                    <li class="list-inline-item">&sdot;</li>
-                    <li class="list-inline-item">
-                      <a href="contacts.html">Contact</a>
-                    </li>
-                    <li class="list-inline-item">&sdot;</li>
-                    <li class="list-inline-item">
-                      <a href="terms.html">Terms of Use</a>
-                    </li>
-                    <li class="list-inline-item">&sdot;</li>
-                    <li class="list-inline-item">
-                      <a href="privacy.html">Privacy Policy</a>
-                    </li>
-                  </ul>
-                  <p class="text-muted small mb-4 mb-lg-0">Copyright &copy; 2019 Detours, Inc. All Rights Reserved.</p>
-                </div>
-      
-                <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-                  <ul class="list-inline mb-0">
-                    <li class="list-inline-item mr-3">
-                      <a href="#">
-                        <i class="fab fa-facebook fa-2x fa-fw"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item mr-3">
-                      <a href="#">
-                        <i class="fab fa-linkedin fa-2x fa-fw"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#">
-                        <i class="fab fa-github fa-2x fa-fw"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </footer>
+    
       
           <!-- Bootstrap core JavaScript -->
           <script src="../vendor/jquery/jquery.min.js"></script>
           <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		  
+		<!-- Footer -->
+		<div id="botFooter"></div>
+		<!-- Footer -->
       
         </body>
       
