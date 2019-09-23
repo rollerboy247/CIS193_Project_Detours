@@ -246,3 +246,31 @@ a.waves-effect, a.waves-light {
     padding: 10px 15px;
   }
 }
+hr {
+width: 50%;
+height: 1px;
+background-color: gray;
+margin-right: auto;
+margin-left: auto;
+margin-top: 5px;
+margin-bottom: 5px;
+border-width: 2px;
+border-color: gray;
+}
+
+table td {
+   border-width: 0px;
+   padding: 5px;
+   font-size: 18px;
+   border-bottom: 1px solid gray;
+}
+.reviewtable {
+	border: none;
+	margin: 0 auto;
+	border-collapse: collapse;
+	border-style: hidden;
+	border-width: 0px;
+}
+h4{
+	width: 100px;
+}
