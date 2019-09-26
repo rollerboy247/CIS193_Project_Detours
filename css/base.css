@@ -242,7 +242,15 @@ a.waves-effect, a.waves-light {
   .navbar-nav {
     flex-direction: column;
   }
+  .nav > li {
+    z-index: inherit;
+  }
   .nav > li > a {
+    z-index: inherit;
     padding: 10px 15px;
+  }
+  .dropdown-toggle:active .dropdown-menu {
+    display: block;
+    position: absolute;
   }
 }
