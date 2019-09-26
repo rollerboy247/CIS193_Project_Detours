@@ -149,11 +149,6 @@ footer.footer {
   color: #4285f4!important;
 }
 
-/* preserves background color while shrinking dropdown */
-.container-fluid {
-  background-color: #f8f9fa;
-}
-
 /* navbar inner text */
 .dropdown-menu>li>a {
   color: #4285f4;
@@ -165,9 +160,15 @@ footer.footer {
 }
 
 /* hover option */
-.dropdown:hover .dropdown-menu {
-  display: block;
-  position: absolute;
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+  }
+}
+
+.nav > li {
+  z-index: inherit;
 }
 
 /* static positions of navbar elements after menu show */
@@ -199,18 +200,12 @@ footer.footer {
   color: #4285f4!important;
 }
 
-/* aligns navbar after mdnbootstrap */
-.btn {
-  margin: 0;
-}
-
 .btn:active, .btn:focus, .btn:hover {
   box-shadow: 0 0 0;
 }
 
 .btn-info{
   background-color: #4285f4!important;
-  color: #fff;
 }
 
 /* Realign text in signup/login modal */
@@ -229,6 +224,14 @@ a.waves-effect, a.waves-light {
   color: #4285f4!important;
 }
 
+.navbar-default .navbar-toggle { 
+  border-color: #4285f4;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #4285f4;
+}
+
 /* overwrite bg */
 .bg-light {
   background-color: #f8f9fa !important;
@@ -241,8 +244,6 @@ a.waves-effect, a.waves-light {
 @media (max-width: 768px) {
   .navbar-nav {
     flex-direction: column;
-  }
-  .nav > li > a {
-    padding: 10px 15px;
+    z-index: inherit;
   }
 }
