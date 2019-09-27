@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+div {
+    outline: 0px red solid;
+}
+body {
+    background-color: #e8e8e8;
+}
+p.cal-nav {
+    float: right;
+    padding: 24px 0 0 0;
+    font-size: 1.5em;
+}
+p.cal-nav span {
+    padding: 3px 4px 4px 4px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: grey;
+}
+p.cal-nav span:hover {
+    color: lightblue;
+    border-color: lightblue;
+}
+thead {
+    background-color: grey;
+    color: white;
+}
+td {
+    width: 10vw;
+    height: 10vw;
+}
+thead td {
+    padding: 8px 0;
+    font-size: 1.25em;
+    height: inherit;
+}
+tbody {
+    background-color: white;
+}
+.weekdays td {
+
+}
+div.gallery-container {
+    width: 100%;
+    margin: 0 auto;
+}
+div.cal-gallery {
+    position: relative;
+    margin: 2px;
+    height: 150px;
+    width: 175px;
+    float: left;
+    overflow: hidden;
+}
+div.overlay {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0,0,0,0.4);
+}
+div.overlay p {
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+div.cal-gallery:hover > div.overlay {
+    visibility: visible;
+}
+div#cal-korea {
+    background-image: url(../img/bg-showcase-1.jpg);
+    background-size: cover;
+}
+div#korea-overlay p {
+    position: relative;
+    top: 30%;
+    left: 36%;
+}
+div#cal-germany {
+    background-image: url(../img/bg-showcase-2.jpg);
+    background-size: cover;
+}
+div#germany-overlay p {
+    position: relative;
+    top: 30%;
+    left: 33%;
+}
+div#cal-japan {
+    background-image: url(../img/bg-showcase-3.jpg);
+    background-size: cover;
+}
+div#japan-overlay p {
+    position: relative;
+    top: 30%;
+    left: 40%;
+}
+div#cal-sanfrancisco {
+    background-image: url(../img/sanfrancisco-1.jpg);
+    background-size: cover;
+}
+div#sanfrancisco-overlay p {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+#week1, #week2, #week3, #week4, #week5, #week6 {
+    display: none;
+}
+td {
+    position: relative;
+}
+span.date-number {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 2em;
+}
