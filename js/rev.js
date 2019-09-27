@@ -5,7 +5,7 @@ function addNames(){
 	var i = 0;
 	
 	do {
-		document.getElementsByTagName("h4")[i].innerHTML = revNames[i];
+		document.getElementById("peopleName"+i).innerHTML = revNames[i];
 		i++;
 	}while (i < revNames.length);
 }
@@ -15,7 +15,6 @@ function addComments(){
 		var tableCell = document.getElementById("p" + i);
 		paragraphs = tableCell.getElementsByTagName("p");
 		paragraphs[0].innerHTML =revCom[i];
-		
 	}
 }
 
