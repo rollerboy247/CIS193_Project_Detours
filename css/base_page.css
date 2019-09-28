@@ -473,7 +473,7 @@ input, select, textarea {
 			position: absolute;
 			right: 0;
 			text-align: center;
-			top: 6%;
+			top: 0%;
 			width: 2.75em;
 		}
 
@@ -547,7 +547,7 @@ input, select, textarea {
 				line-height: 2.0625em;
 				position: absolute;
 				text-align: center;
-				top: 6%;
+				top: 0;
 				width: 2.0625em;
 			}
 
@@ -836,20 +836,15 @@ input, select, textarea {
 		transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
 		-webkit-overflow-scrolling: touch;
 		position: fixed;
-		top: 6%;
 		width: 22.5em;
 		height: 100%;
 		background: #fff;
 		outline: 0;
-		overflow-x: hidden;
-		overflow-y: auto;
+		overflow:hidden;
 		text-align: right;
 		visibility: visible;
 		z-index: 1000;
 		right: 0;
-		/* Fill*/
-		display: flex;
-		flex-direction: column;
 	}
 
 		#main .toggle {
@@ -1112,7 +1107,7 @@ input, select, textarea {
 		-ms-transition: opacity 0.75s ease, width 0.75s ease;
 		transition: opacity 0.75s ease, width 0.75s ease;
 		position: absolute;
-		top: 6%;
+		top: 0;
 		width: calc(100% - 22.5em);
 		height: 94%;
 		left: 0;
@@ -1367,3 +1362,4 @@ div#botFooter {
 	width: 100%;
 	z-index: 2000;
 }
+
