@@ -246,4 +246,8 @@ a.waves-effect, a.waves-light {
     flex-direction: column;
     z-index: inherit;
   }
+  .dropdown-toggle:active .dropdown-menu {
+    display: block;
+    position: absolute;
+  }
 }
