@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
-/*
-	Lens by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+/*Lens by HTML5 UP*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -20,10 +16,11 @@ section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;}
 
+#header {
+	padding: 3em 2.25em 1.75em 2.25em;
+}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -109,29 +106,10 @@ input, select, textarea {
 	html, body {
 		background-color: #f8f9fa;
 		overflow: hidden;
+		height: 100%;
 	}
 
 /* Type */
-
-	html {
-		font-size: 16pt;
-	}
-
-		@media screen and (max-width: 1680px) {
-
-			html {
-				font-size: 12pt;
-			}
-
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			html {
-				font-size: 11pt;
-			}
-
-		}
 
 	body {
 		background-color: #fff;
@@ -140,9 +118,6 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		font-family: "Roboto", Helvetica, sans-serif;
-		font-weight: 400;
-		line-height: 1.65;
-		font-size: 1em;
 		color: #aaa;
 	}
 
@@ -151,8 +126,6 @@ input, select, textarea {
 		-webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
 		-ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
 		transition: color 0.25s ease, border-bottom-color 0.25s ease;
-		border-bottom: dotted 1px;
-		color: inherit;
 		text-decoration: none;
 		/* Adjust */
 		border: 0;
@@ -188,26 +161,6 @@ input, select, textarea {
 			text-decoration: none;
 			background-color: inherit;
 		}
-
-	h2 {
-		font-size: 1.25em;
-	}
-
-	h3 {
-		font-size: 1em;
-	}
-
-	h4 {
-		font-size: 0.9em;
-	}
-
-	h5 {
-		font-size: 0.8em;
-	}
-
-	h6 {
-		font-size: 0.7em;
-	}
 
 	sub {
 		font-size: 0.8em;
@@ -835,21 +788,23 @@ input, select, textarea {
 		-ms-transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
 		transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
 		-webkit-overflow-scrolling: touch;
-		position: fixed;
+		position: relative;
+		float: right;
 		width: 22.5em;
 		height: 100%;
 		background: #fff;
 		outline: 0;
-		overflow:hidden;
+		overflow:scroll;
 		text-align: right;
 		visibility: visible;
 		z-index: 1000;
-		right: 0;
+
 	}
 
 		#main .toggle {
 			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-			position: absolute;
+			position: relative;
+			float: right;
 			top: 0;
 			width: 4em;
 			height: 4em;
@@ -928,18 +883,7 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
-		padding: 3em 2.25em 1.75em 2.25em ;
-	}
-
-		#header h1 {
-			font-size: 2.25em;
-			font-weight: 700;
-		}
-
 /* Footer */
-/* Footer (Use for inner footer if needed, this is within the 'main' on right side
-
 	#footer {
 		padding: 2.25em 2.25em 1em 2.25em ;
 	}
@@ -959,7 +903,7 @@ input, select, textarea {
 				#footer .copyright li:first-child {
 					margin-left: 0;
 				}
-*/
+
 
 /* Thumbnails */
 
@@ -1109,8 +1053,9 @@ input, select, textarea {
 		position: absolute;
 		top: 0;
 		width: calc(100% - 22.5em);
-		height: 94%;
+		height: 100%;
 		left: 0;
+		display: flex;
 	}
 
 		#viewer .inner {
@@ -1355,11 +1300,46 @@ input, select, textarea {
 
 		}
 
+
+
+
 div#botFooter {
 	bottom: 0;
-	left: 0;
 	position: absolute;
 	width: 100%;
-	z-index: 2000;
+	right: 0;
+	z-index: 1000;
 }
 
+div#navigation {
+	width: 100%;
+	position: absolute;
+}
+
+#main,
+#viewer,
+#viewer > *  {
+	padding-top: 7%;
+	height:88%;
+}
+
+
+#header > .image.avatar {
+	margin: 0 0 1em 0;
+	width: 6.25em;
+}
+
+h1 > img {
+	height: 100px;
+	width: 100px;
+	border-radius:100%;
+}
+
+.thumbnail > img {
+	height: 122.5px;
+	object-fit: cover;
+}
+
+html {
+	background:black!important;
+}
