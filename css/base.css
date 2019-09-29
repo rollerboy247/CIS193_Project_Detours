@@ -1,3 +1,102 @@
 div #myCarousel{
 	max-height: 550px;
 }
+
+h1 {
+	text-align: center;
+}
+
+body {
+	text-align: center;
+	font-size: 40px;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 22%;
+	height: 4.8%;
+}
+#detours {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 20%;
+}
+
+table, th, td {
+	background-color: #F1F1F1;
+	padding: 15px;
+	border: 0px solid black;
+	font-size: medium;
+	border-radius: 25px;
+}
+
+.topleft {
+	position: fixed;
+	background-color: black;
+	top: 0;
+	width: 20%;
+	height: 75%;
+	left: 0;
+}
+
+.topright {
+	position: fixed;
+	background-color: grey;
+	top: 0;
+	width: 80%;
+	height: 40%;
+	right: .0001%;
+}
+
+/* Control the left side */
+.left {
+	overflow-y: auto;
+	height: 100%;
+	top: 15%;
+	position: fixed;
+	width: 20%;
+  left: 0;
+  background-color: black;
+	font-size: 16px;
+	color: white;
+
+}
+
+/* Control the right side */
+.right {
+	overflow: scroll;
+	height: 100%;
+	position: fixed;
+	width: 80%;
+  right: .0001%;
+  background-color: white;
+}
+
+#column0row0 {
+	width: 50px;
+}
+
+#column1row0 {
+	width: 190px;
+}
+
+#column2row0 {
+	width: 170px;
+}
+
+#column3row0 {
+	width: 70px;
+}
+
+#column4row0 {
+	width: 170px;
+}
+
+
+table {
+	box-shadow: 0px 0px 20px grey;
+}
