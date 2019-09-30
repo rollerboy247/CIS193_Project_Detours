@@ -86,11 +86,27 @@ function addReviews(){
 	}
 }
 
+function appendReviews(){
+	var userName = document.getElementById('form34').value;
+	var userReview = document.getElementById('form8').value;;
+	
+	reviews.push([userName,userReview]);
+	var table = document.getElementById("reviewtable");
+	for(var i = 0; i < table.rows.length;){   
+		table.deleteRow(i);
+	}
+	setUpPage();
+		
+}
 
 function setUpPage() {
 setUpTable();
 addReviews();
+
 }
+//Event Lister for modal submit button
+document.getElementById("submitForm").addEventListener("click", appendReviews, false);
+
 if (window.addEventListener) {
 	window.addEventListener("load", setUpPage, false);
 } else if (window.attachEvent) {
