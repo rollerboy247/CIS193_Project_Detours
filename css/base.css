@@ -241,7 +241,7 @@ a.waves-effect, a.waves-light {
   flex-direction: row;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 765.98px) {
   .navbar-nav {
     flex-direction: column;
     z-index: inherit;

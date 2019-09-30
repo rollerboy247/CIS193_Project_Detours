@@ -117,7 +117,6 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Roboto", Helvetica, sans-serif;
 		color: #aaa;
 	}
 
@@ -794,7 +793,7 @@ input, select, textarea {
 		height: 100%;
 		background: #fff;
 		outline: 0;
-		overflow:scroll;
+		overflow: auto; 
 		text-align: right;
 		visibility: visible;
 		z-index: 1000;
@@ -1319,8 +1318,32 @@ div#navigation {
 #main,
 #viewer,
 #viewer > *  {
-	padding-top: 7%;
-	height:88%;
+	top: 6.6%;
+	height:82%;
+}
+
+@media (max-width: 991.98px) {
+	#main,
+	#viewer,
+	#viewer > * {
+		height: 78%;
+	}
+} 
+
+@media (max-width: 767.98px) {
+	#main,
+	#viewer,
+	#viewer > * {
+		top: 6%
+	}
+}
+
+@media (max-width: 575.98px) {
+	#main,
+	#viewer,
+	#viewer > * {
+		height: 74.6%;
+	}
 }
 
 
@@ -1342,4 +1365,8 @@ h1 > img {
 
 html {
 	background:black!important;
+}
+
+body {
+	overflow: hidden;
 }
