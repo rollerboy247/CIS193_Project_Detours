@@ -6,41 +6,70 @@ div {
 body {
     background-color: #e8e8e8;
 }
+
+
+/************ CALENDAR **************/
+
+#day-labels, #week1, #week2, #week3, #week4, #week5, #week6  {
+    /* outline: 1px solid red; */
+    clear: both;
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding; 0;
+}
+#day-labels > div {
+    width: 14.28%;
+    float: left;
+    color: white;
+    font-size: 1.5em;
+    background-color: grey;
+}
+#day-labels > div > p {
+    padding: 8px 0;
+    margin: 0;
+    text-align: center;
+}
+#week1, #week2, #week3, #week4, #week5, #week6 {
+    background-color: white;
+    display: none;
+}
+div.week-day {
+    position: relative;
+    float: left;
+    border-right: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    border-left: 1px #ddd solid;
+    width: 14.28%;
+    height: 10vw;
+}
+div.week-day .date-number {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 1.5em;
+}
+
 p.cal-nav {
     float: right;
     padding: 24px 0 0 0;
     font-size: 1.5em;
 }
-p.cal-nav span {
+p.cal-nav a:not([href]) {
     padding: 3px 4px 4px 4px;
     border: 2px solid grey;
     border-radius: 50%;
     margin: 0 10px;
     color: grey;
 }
-p.cal-nav span:hover {
+p.cal-nav a:not([href]):hover {
     color: lightblue;
     border-color: lightblue;
 }
-thead {
-    background-color: grey;
-    color: white;
-}
-td {
-    width: 10vw;
-    height: 10vw;
-}
-thead td {
-    padding: 8px 0;
-    font-size: 1.25em;
-    height: inherit;
-}
-tbody {
-    background-color: white;
-}
-.weekdays td {
 
-}
+
+/************ GALLERY **************/
+
 div.gallery-container {
     width: 100%;
     margin: 0 auto;
@@ -52,6 +81,7 @@ div.cal-gallery {
     width: 175px;
     float: left;
     overflow: hidden;
+    background-size: cover;
 }
 div.overlay {
     visibility: hidden;
@@ -64,55 +94,33 @@ div.overlay p {
     color: white;
     font-weight: bolder;
     text-transform: uppercase;
+    position: relative;
+    top: 30%;
 }
 div.cal-gallery:hover > div.overlay {
     visibility: visible;
 }
 div#cal-korea {
     background-image: url(../img/bg-showcase-1.jpg);
-    background-size: cover;
 }
 div#korea-overlay p {
-    position: relative;
-    top: 30%;
     left: 36%;
 }
 div#cal-germany {
     background-image: url(../img/bg-showcase-2.jpg);
-    background-size: cover;
 }
 div#germany-overlay p {
-    position: relative;
-    top: 30%;
     left: 33%;
 }
 div#cal-japan {
     background-image: url(../img/bg-showcase-3.jpg);
-    background-size: cover;
 }
 div#japan-overlay p {
-    position: relative;
-    top: 30%;
     left: 40%;
 }
 div#cal-sanfrancisco {
     background-image: url(../img/sanfrancisco-1.jpg);
-    background-size: cover;
 }
 div#sanfrancisco-overlay p {
-    position: absolute;
-    top: 30%;
     left: 20%;
-}
-#week1, #week2, #week3, #week4, #week5, #week6 {
-    display: none;
-}
-td {
-    position: relative;
-}
-span.date-number {
-    position: absolute;
-    top: 5%;
-    right: 10%;
-    font-size: 2em;
 }

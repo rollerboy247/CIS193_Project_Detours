@@ -43,10 +43,26 @@
 					<div class="col-sm-0 col-lg-1"></div>
 					<div class="col-sm-12 col-lg-10">
 						<h1 style="font-weight: lighter;">Click Location for Tour Dates &amp; Times</h1>
-						<div class="cal-gallery" id="cal-korea"><div class="overlay" id="korea-overlay"><p>Korea<p></div></div>
-						<div class="cal-gallery" id="cal-germany"><div class="overlay" id="germany-overlay"><p>Germany<p></div></div>
-						<div class="cal-gallery" id="cal-japan"><div class="overlay" id="japan-overlay"><p>Japan<p></div></div>
-						<div class="cal-gallery" id="cal-sanfrancisco"><div class="overlay" id="sanfrancisco-overlay"><p>San Francisco<p></div></div>
+						<div class="cal-gallery" id="cal-korea">
+							<div class="overlay" id="korea-overlay">
+								<p>Korea<p>
+							</div>
+						</div>
+						<div class="cal-gallery" id="cal-germany">
+							<div class="overlay" id="germany-overlay">
+								<p>Germany<p>
+							</div>
+						</div>
+						<div class="cal-gallery" id="cal-japan">
+							<div class="overlay" id="japan-overlay">
+								<p>Japan<p>
+							</div>
+						</div>
+						<div class="cal-gallery" id="cal-sanfrancisco">
+							<div class="overlay" id="sanfrancisco-overlay">
+								<p>San Francisco<p>
+							</div>
+						</div>
 					</div>
 					<div class="col-sm-0 col-lg-1"></div>
 				</div>
@@ -56,79 +72,74 @@
 				<div class="col-sm-0 col-lg-1"></div>
 				<div class="col-sm-12 col-lg-10">
 					<h1 id="monthEntry" style="float: left;"></h1>
-					<p class="cal-nav"><span class="glyphicon glyphicon-chevron-left"></span><span class="glyphicon glyphicon-chevron-right"></span></p>
-					<table style="clear: both; width: 100%;" class="table-bordered">
-						<thead style="text-align: center;">
-							<td>Sun</td>
-							<td>Mon</td>
-							<td>Tue</td>
-							<td>Wed</td>
-							<td>Thu</td>
-							<td>Fri</td>
-							<td>Sat</td>
-						</thead>
-						<tbody>
-							<tr id="week1">
-								<td id="r1d1"></td>
-								<td id="r1d2"></td>
-								<td id="r1d3"></td>
-								<td id="r1d4"></td>
-								<td id="r1d5"></td>
-								<td id="r1d6"></td>
-								<td id="r1d7"></td>
-							</tr>
-							<tr id="week2">
-								<td id="r2d1"></td>
-								<td id="r2d2"></td>
-								<td id="r2d3"></td>
-								<td id="r2d4"></td>
-								<td id="r2d5"></td>
-								<td id="r2d6"></td>
-								<td id="r2d7"></td>
-							</tr>
-							<tr id="week3">
-								<td id="r3d1"></td>
-								<td id="r3d2"></td>
-								<td id="r3d3"></td>
-								<td id="r3d4"></td>
-								<td id="r3d5"></td>
-								<td id="r3d6"></td>
-								<td id="r3d7"></td>
-							</tr>
-							<tr id="week4">
-								<td id="r4d1"></td>
-								<td id="r4d2"></td>
-								<td id="r4d3"></td>
-								<td id="r4d4"></td>
-								<td id="r4d5"></td>
-								<td id="r4d6"></td>
-								<td id="r4d7"></td>
-							</tr>
-							<tr id="week5">
-								<td id="r5d1"></td>
-								<td id="r5d2"></td>
-								<td id="r5d3"></td>
-								<td id="r5d4"></td>
-								<td id="r5d5"></td>
-								<td id="r5d6"></td>
-								<td id="r5d7"></td>
-							</tr>
-							<tr id="week6">
-								<td id="r6d1"></td>
-								<td id="r6d2"></td>
-								<td id="r6d3"></td>
-								<td id="r6d4"></td>
-								<td id="r6d5"></td>
-								<td id="r6d6"></td>
-								<td id="r6d7"></td>
-							</tr>
-						</tbody>
-					</table>
+					<p class="cal-nav"><a class="glyphicon glyphicon-chevron-left" onclick="lastMonth()"></a><a class="glyphicon glyphicon-chevron-right" onclick="nextMonth()"></a></p>
+					<div class="row" id="day-labels">
+						<div class="table-bordered"><p>Sun</p></div>
+						<div class="table-bordered"><p>Mon</p></div>
+						<div class="table-bordered"><p>Tue</p></div>
+						<div class="table-bordered"><p>Wed</p></div>
+						<div class="table-bordered"><p>Thu</p></div>
+						<div class="table-bordered"><p>Fri</p></div>
+						<div class="table-bordered"><p>Sat</p></div>
+					</div>
+					<div class="row" id="week1">
+						<div class="week-day" id="r1d1"><div></div><div></div></div>
+						<div class="week-day" id="r1d2"><div></div><div></div></div>
+						<div class="week-day" id="r1d3"><div></div><div></div></div>
+						<div class="week-day" id="r1d4"><div></div><div></div></div>
+						<div class="week-day" id="r1d5"><div></div><div></div></div>
+						<div class="week-day" id="r1d6"><div></div><div></div></div>
+						<div class="week-day" id="r1d7"><div></div><div></div></div>
+					</div>
+					<div class="row" id="week2">
+						<div class="week-day" id="r2d1"><div></div><div></div></div>
+						<div class="week-day" id="r2d2"><div></div><div></div></div>
+						<div class="week-day" id="r2d3"><div></div><div></div></div>
+						<div class="week-day" id="r2d4"><div></div><div></div></div>
+						<div class="week-day" id="r2d5"><div></div><div></div></div>
+						<div class="week-day" id="r2d6"><div></div><div></div></div>
+						<div class="week-day" id="r2d7"><div></div><div></div></div>
+					</div>
+					<div class="row" id="week3">
+						<div class="week-day" id="r3d1"><div></div><div></div></div>
+						<div class="week-day" id="r3d2"><div></div><div></div></div>
+						<div class="week-day" id="r3d3"><div></div><div></div></div>
+						<div class="week-day" id="r3d4"><div></div><div></div></div>
+						<div class="week-day" id="r3d5"><div></div><div></div></div>
+						<div class="week-day" id="r3d6"><div></div><div></div></div>
+						<div class="week-day" id="r3d7"><div></div><div></div></div>
+					</div>
+					<div class="row" id="week4">
+						<div class="week-day" id="r4d1"><div></div><div></div></div>
+						<div class="week-day" id="r4d2"><div></div><div></div></div>
+						<div class="week-day" id="r4d3"><div></div><div></div></div>
+						<div class="week-day" id="r4d4"><div></div><div></div></div>
+						<div class="week-day" id="r4d5"><div></div><div></div></div>
+						<div class="week-day" id="r4d6"><div></div><div></div></div>
+						<div class="week-day" id="r4d7"><div></div><div></div></div>
+					</div>
+					<div class="row" id="week5">
+						<div class="week-day" id="r5d1"><div></div><div></div></div>
+						<div class="week-day" id="r5d2"><div></div><div></div></div>
+						<div class="week-day" id="r5d3"><div></div><div></div></div>
+						<div class="week-day" id="r5d4"><div></div><div></div></div>
+						<div class="week-day" id="r5d5"><div></div><div></div></div>
+						<div class="week-day" id="r5d6"><div></div><div></div></div>
+						<div class="week-day" id="r5d7"><div></div><div></div></div>
+					</div>
+					<div class="row" id="week6">
+						<div class="week-day" id="r6d1"><div></div><div></div></div>
+						<div class="week-day" id="r6d2"><div></div><div></div></div>
+						<div class="week-day" id="r6d3"><div></div><div></div></div>
+						<div class="week-day" id="r6d4"><div></div><div></div></div>
+						<div class="week-day" id="r6d5"><div></div><div></div></div>
+						<div class="week-day" id="r6d6"><div></div><div></div></div>
+						<div class="week-day" id="r6d7"><div></div><div></div></div>
+					</div>
 				</div>
 				<div class="col-sm-0 col-lg-1"></div>
 			</div>
 		</div>
-		<!---PUT YOUR STUFF HERE---------->
 
 
 		<!-- Footer -->
