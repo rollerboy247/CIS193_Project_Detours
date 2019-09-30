@@ -5,7 +5,7 @@ var reviews = [
 ];
 
 function setUpTable(){
-	var table="";
+	
 	for(var i=0; i<reviews.length;i++){
 		 var table = document.getElementById("reviewtable");
 		 var row = document.createElement("tr");
@@ -46,8 +46,7 @@ function setUpTable(){
 		 var div2 = document.createElement("div");
 		 td2.appendChild(div2);
 		 
-		 
-		 
+		 		 
 		 var list0 = document.createElement("i");
 		 var list1 = document.createElement("i");
 		 var list2 = document.createElement("i");
@@ -79,18 +78,13 @@ function addReviews(){
 		
 	}
 	for(var x =0; reviews.length;x++){
-			var str;
-			var tableCell = document.getElementById("p" + x);
-			paragraphs = tableCell.getElementsByTagName("p");
-			str=reviews[x][1];
-			paragraphs[0].innerHTML =str.fontsize(4.5);
-			
+		var str;
+		var tableCell = document.getElementById("p" + x);
+		paragraphs = tableCell.getElementsByTagName("p");
+		str=reviews[x][1];
+		paragraphs[0].innerHTML =str.fontsize(4.5);
 	}
 }
-
-
-
-
 
 
 function setUpPage() {
@@ -102,3 +96,4 @@ if (window.addEventListener) {
 } else if (window.attachEvent) {
 	window.attachEvent("onload", setUpPage);
 }
+
