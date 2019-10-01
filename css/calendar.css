@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+div {
+    outline: 0px red solid;
+}
+body {
+    background-color: #e8e8e8;
+}
+
+
+/************ CALENDAR **************/
+
+#day-labels, #week1, #week2, #week3, #week4, #week5, #week6  {
+    /* outline: 1px solid red; */
+    clear: both;
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding; 0;
+}
+#day-labels > div {
+    width: 14.28%;
+    float: left;
+    color: white;
+    font-size: 1.5em;
+    background-color: #4ea6bc;
+}
+#day-labels > div > p {
+    padding: 8px 0;
+    margin: 0;
+    text-align: center;
+}
+#week1, #week2, #week3, #week4, #week5, #week6 {
+    background-color: white;
+    display: none;
+}
+div.week-day {
+    position: relative;
+    float: left;
+    border-right: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    border-left: 1px #ddd solid;
+    width: 14.28%;
+    height: 10vw;
+}
+div.week-day .date-number {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 1.5em;
+}
+
+p.cal-nav {
+    float: right;
+    padding: 24px 0 0 0;
+    font-size: 1.5em;
+}
+p.cal-nav a:not([href]) {
+    padding: 3px 4px 4px 4px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: grey;
+}
+p.cal-nav a:not([href]):hover {
+    color: #f08573;
+    border-color: #f08573;
+}
+
+
+/************ GALLERY **************/
+
+div.gallery-container {
+    width: 100%;
+    margin: 0 auto;
+}
+div.cal-gallery {
+    position: relative;
+    margin: 2px;
+    height: 150px;
+    width: 175px;
+    float: left;
+    overflow: hidden;
+    background-size: cover;
+}
+div.overlay {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0,0,0,0.4);
+}
+div.overlay p {
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    top: 30%;
+}
+div.cal-gallery:hover > div.overlay {
+    visibility: visible;
+}
+div#cal-korea {
+    background-image: url(../img/bg-showcase-1.jpg);
+}
+div#korea-overlay p {
+    left: 36%;
+}
+div#cal-germany {
+    background-image: url(../img/bg-showcase-2.jpg);
+}
+div#germany-overlay p {
+    left: 33%;
+}
+div#cal-japan {
+    background-image: url(../img/bg-showcase-3.jpg);
+}
+div#japan-overlay p {
+    left: 40%;
+}
+div#cal-sanfrancisco {
+    background-image: url(../img/sanfrancisco-1.jpg);
+}
+div#sanfrancisco-overlay p {
+    left: 20%;
+}
