@@ -23,7 +23,7 @@ body {
     float: left;
     color: white;
     font-size: 1.5em;
-    background-color: grey;
+    background-color: #4ea6bc;
 }
 #day-labels > div > p {
     padding: 8px 0;
@@ -63,8 +63,8 @@ p.cal-nav a:not([href]) {
     color: grey;
 }
 p.cal-nav a:not([href]):hover {
-    color: lightblue;
-    border-color: lightblue;
+    color: #f08573;
+    border-color: #f08573;
 }
 
 
