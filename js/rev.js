@@ -37,7 +37,7 @@ function setUpTable(){
 				break;
 			 default:
 				img.setAttribute("src","../img/default-avatar.png");
-		 }
+			}
 		 
 		 var td2 = document.createElement("td");
 		 row.appendChild(td2);
@@ -68,7 +68,6 @@ function setUpTable(){
 		 list2.setAttribute("class","fas fa-star");
 		 list3.setAttribute("class","fas fa-star");
 		 list4.setAttribute("class","fas fa-star");
-		 
 	}
 }
 function addReviews(){
@@ -89,16 +88,38 @@ function addReviews(){
 function appendReviews(){
 	var userName = document.getElementById('form34').value;
 	var userReview = document.getElementById('form8').value;
-	
-	reviews.push([userName,userReview]);
-	var table = document.getElementById("reviewtable");
-	for(var i = 0; i < table.rows.length;){   
-		table.deleteRow(i);
+	var verifiedRev = true;
+	try{
+		if(userReview===""&&userName===""){
+			throw "Please fill out both fields.";
+		}
+		if(userName===""){
+			throw "Please enter a name.";
+		}
+		if(userReview===""){
+			throw "Please write a review.";
+		}
 	}
-	document.getElementById('form34').value="";
-	document.getElementById('form8').value="";
-	setUpPage();
+	catch(message){
+		window.alert(message);
+		document.getElementById('form34').value="";
+		document.getElementById('form8').value="";
+		verifiedRev=false;
+	}
+	finally{
+		if(verifiedRev){
+			reviews.push([userName,userReview]);
+			var table = document.getElementById("reviewtable");
 		
+			for(var i = 0; i < table.rows.length;){   
+				table.deleteRow(i);
+			}
+		
+			document.getElementById('form34').value="";
+			document.getElementById('form8').value="";
+			setUpPage();
+		}
+	}
 }
 
 function setUpPage() {
