@@ -36,7 +36,7 @@ function setUpTable(){
 				img.setAttribute("src","../img/testimonials-3.jpg");
 				break;
 			 default:
-				img.setAttribute("src","../img/default-avatar.png");
+				img.setAttribute("src","https://www.pphfoundation.ca/wp-content/uploads/2018/05/default-avatar.png");
 			}
 		 
 		 var td2 = document.createElement("td");
