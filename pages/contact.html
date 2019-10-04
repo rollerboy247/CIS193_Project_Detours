@@ -28,17 +28,6 @@
 
     <!-- CSS !Keep this at the end of head element -->
     <link rel="stylesheet" href="../css/base.css" >
-	
-	<script>
-		$(function(){
-			$("#navigation").load("navbar.html");
-		});
-	</script>
-	<script>
-		$(function(){
-			$("#botFooter").load("footer.html");
-		});
-	</script>
 
   </head>
 
@@ -47,7 +36,16 @@
 		<div id="navigation"></div>
 		<div style="margin-top: 100px;"></div>
 		<!---------- Navigation Bar ---------->	
-
+		
+		<div class="container-fluid">
+			<div id="left">
+			<script src="../js/contact.js"></script>
+			</div>
+			<div id="right">
+					Click on the flags to the left to display info about tour guides.
+			</div>
+		</div>
+		
 
 
 
@@ -58,6 +56,8 @@
 		<!-- Footer -->
 		<div id="botFooter"></div>
 		<!-- Footer -->
-
+	
+		<script src="../js/loadNav.js"></script>
+		<script src="../js/loadFooter.js"></script>
     </body>
 </html>

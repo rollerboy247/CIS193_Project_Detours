@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Detours Calendar</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap !Change from bootstrap.min.css to bootstrap.css -->
+		<link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="../vendor/bootstrap/css/mdb.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.js"></script>
+
+		<!-- MDB: https://mdbootstrap.com/md-bootstrap-cdn/ -->
+		<!-- Material Design Bootstrap -->
+		<script href="../js/mdb.js" rel="text/javascript"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
+
+		<!-- Custom fonts for this template -->
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+		<link href="../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+		<!-- CSS !Keep this at the end of head element -->
+		<link rel="stylesheet" href="../css/base.css" >
+		<link rel="stylesheet" href="../css/calendar.css" />
+	</head>
+
+	<body class="bg-light">
+		<!-- Navigation Bar ---------->
+		<div id="navigation"></div>
+
+		<!---PUT YOUR STUFF HERE---------->
+		<div class="container-fluid" style="padding-top: 80px;">
+
+			<!-- Begin Image Gallery Row for JS Calendar Highlighting-->
+				<div class="row">
+					<div class="col-sm-0 col-lg-1"></div>
+					<div class="col-sm-12 col-lg-10">
+						<h1 style="font-weight: lighter;">Click Location for Tour Dates &amp; Times</h1>
+						<div class="cal-gallery" id="cal-korea">
+							<div class="overlay" id="korea-overlay">
+								<p>Korea<p>
+							</div>
+						</div>
+						<div class="cal-gallery" id="cal-germany">
+							<div class="overlay" id="germany-overlay">
+								<p>Germany<p>
+							</div>
+						</div>
+						<div class="cal-gallery" id="cal-japan">
+							<div class="overlay" id="japan-overlay">
+								<p>Japan<p>
+							</div>
+						</div>
+						<div class="cal-gallery" id="cal-sanfrancisco">
+							<div class="overlay" id="sanfrancisco-overlay">
+								<p>San Francisco<p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-0 col-lg-1"></div>
+				</div>
+
+			<!-- Begin Calendar Section-->
+			<div class="row" style="padding-top: 40px;">
+				<div class="col-sm-0 col-lg-1"></div>
+				<div class="col-sm-12 col-lg-10">
+					<h1 id="monthEntry" style="float: left;"></h1>
+					<p class="cal-nav"><a class="glyphicon glyphicon-chevron-left" onclick="lastMonth()"></a><a class="glyphicon glyphicon-chevron-right" onclick="nextMonth()"></a></p>
+					<div class="row" id="day-labels">
+						<div class="table-bordered"><p>Sun</p></div>
+						<div class="table-bordered"><p>Mon</p></div>
+						<div class="table-bordered"><p>Tue</p></div>
+						<div class="table-bordered"><p>Wed</p></div>
+						<div class="table-bordered"><p>Thu</p></div>
+						<div class="table-bordered"><p>Fri</p></div>
+						<div class="table-bordered"><p>Sat</p></div>
+					</div>
+					<div class="row" id="week1">
+						<div class="week-day" id="r1d1"><div></div><div></div></div>
+						<div class="week-day" id="r1d2"><div></div><div></div></div>
+						<div class="week-day" id="r1d3"><div></div><div></div></div>
+						<div class="week-day" id="r1d4"><div></div><div></div></div>
+						<div class="week-day" id="r1d5"><div></div><div></div></div>
+						<div class="week-day" id="r1d6"><div></div><div></div></div>
+						<div class="week-day" id="r1d7"><div></div><div></div></div>
+					</div>
+					<div class="row" id="week2">
+						<div class="week-day" id="r2d1"><div></div><div></div></div>
+						<div class="week-day" id="r2d2"><div></div><div></div></div>
+						<div class="week-day" id="r2d3"><div></div><div></div></div>
+						<div class="week-day" id="r2d4"><div></div><div></div></div>
+						<div class="week-day" id="r2d5"><div></div><div></div></div>
+						<div class="week-day" id="r2d6"><div></div><div></div></div>
+						<div class="week-day" id="r2d7"><div></div><div></div></div>
+					</div>
+					<div class="row" id="week3">
+						<div class="week-day" id="r3d1"><div></div><div></div></div>
+						<div class="week-day" id="r3d2"><div></div><div></div></div>
+						<div class="week-day" id="r3d3"><div></div><div></div></div>
+						<div class="week-day" id="r3d4"><div></div><div></div></div>
+						<div class="week-day" id="r3d5"><div></div><div></div></div>
+						<div class="week-day" id="r3d6"><div></div><div></div></div>
+						<div class="week-day" id="r3d7"><div></div><div></div></div>
+					</div>
+					<div class="row" id="week4">
+						<div class="week-day" id="r4d1"><div></div><div></div></div>
+						<div class="week-day" id="r4d2"><div></div><div></div></div>
+						<div class="week-day" id="r4d3"><div></div><div></div></div>
+						<div class="week-day" id="r4d4"><div></div><div></div></div>
+						<div class="week-day" id="r4d5"><div></div><div></div></div>
+						<div class="week-day" id="r4d6"><div></div><div></div></div>
+						<div class="week-day" id="r4d7"><div></div><div></div></div>
+					</div>
+					<div class="row" id="week5">
+						<div class="week-day" id="r5d1"><div></div><div></div></div>
+						<div class="week-day" id="r5d2"><div></div><div></div></div>
+						<div class="week-day" id="r5d3"><div></div><div></div></div>
+						<div class="week-day" id="r5d4"><div></div><div></div></div>
+						<div class="week-day" id="r5d5"><div></div><div></div></div>
+						<div class="week-day" id="r5d6"><div></div><div></div></div>
+						<div class="week-day" id="r5d7"><div></div><div></div></div>
+					</div>
+					<div class="row" id="week6">
+						<div class="week-day" id="r6d1"><div></div><div></div></div>
+						<div class="week-day" id="r6d2"><div></div><div></div></div>
+						<div class="week-day" id="r6d3"><div></div><div></div></div>
+						<div class="week-day" id="r6d4"><div></div><div></div></div>
+						<div class="week-day" id="r6d5"><div></div><div></div></div>
+						<div class="week-day" id="r6d6"><div></div><div></div></div>
+						<div class="week-day" id="r6d7"><div></div><div></div></div>
+					</div>
+				</div>
+				<div class="col-sm-0 col-lg-1"></div>
+			</div>
+		</div>
+
+
+		<!-- Footer -->
+		<div id="botFooter"></div>
+		<!-- Footer -->
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="../vendor/jquery/jquery.min.js"></script>
+		<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- JQuery -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
+		<script src="../js/loadNav.js"></script>
+		<script src="../js/loadFooter.js"></script>
+		<script src="../js/calendar.js"></script>
+	</body>
+
+</html>
