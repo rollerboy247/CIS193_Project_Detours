@@ -34,35 +34,46 @@ body {
     background-color: white;
     display: none;
 }
-div.week-day {
+.week-day {
     position: relative;
     float: left;
-    border-right: 1px #ddd solid;
-    border-bottom: 1px #ddd solid;
-    border-left: 1px #ddd solid;
     width: 14.28%;
     height: 10vw;
 }
-div.week-day .date-number {
+.week-day .date-number {
     position: absolute;
     top: 5%;
     right: 10%;
     font-size: 1.5em;
 }
+.calendar-row {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.calendar-row:first-of-type {
+    border-top: 1px solid #ddd;
+}
+.calendar-row > div {
+    border-right: 1px solid #ddd;
+}
+.calendar-row > div:last-of-type {
+    border-right: 0;
+}
 
-p.cal-nav {
+.cal-nav {
     float: right;
     padding: 24px 0 0 0;
     font-size: 1.5em;
 }
-p.cal-nav a:not([href]) {
+.cal-nav a:not([href]) {
     padding: 3px 4px 4px 4px;
     border: 2px solid grey;
     border-radius: 50%;
     margin: 0 10px;
     color: grey;
 }
-p.cal-nav a:not([href]):hover {
+.cal-nav a:not([href]):hover {
     color: #f08573;
     border-color: #f08573;
 }
