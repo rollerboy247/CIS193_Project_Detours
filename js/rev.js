@@ -13,9 +13,6 @@ function setUpTable(){
 		// retrieving our data and converting it back into an array
 		var retrievedData = localStorage.getItem("saveReviews");
 		var review2 = JSON.parse(retrievedData);
-
-		//making sure it still is an array
-		alert(review2.length);
 		reviews=review2;
 	}
 	
