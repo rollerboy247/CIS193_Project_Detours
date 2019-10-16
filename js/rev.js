@@ -6,7 +6,7 @@ var reviews = [
 
 function setUpTable(){
 	//Remove this line if you want the array to save.
-	window.localStorage.clear();
+	//window.localStorage.clear();
 
 	
 	if (localStorage.getItem("saveReviews") != null) {
@@ -142,6 +142,7 @@ addReviews();
 }
 //Event Lister for modal submit button
 document.getElementById("submitForm").addEventListener("click", appendReviews, false);
+
 
 if (window.addEventListener) {
 	window.addEventListener("load", setUpPage, false);
