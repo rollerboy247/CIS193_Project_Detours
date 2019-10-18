@@ -37,28 +37,10 @@ function returnInfo(index) {
     + "(626)555-" + tourGuides[index].phoneNumber + "<br>";
 }
 
-function makeGrey(index) {
-  clickedFlag = document.getElementById(index);
-  clickedFlag.style.backgroundColor = "lightgrey";
-}
-
-function makeWhite() {
-  for(i=0; i < tourGuides.length; i++) {
-    document.getElementById(i).style.backgroundColor = "#f8f9fa";
-  }
-}
-
-function handleClick(i) {
-  returnInfo(i);
-  makeWhite();
-  makeGrey(i);
-}
-
 for(i=0; i < tourGuides.length; i++) {
-	document.write("<div id='" + i + "' onclick='handleClick(" + i + ")'>");
-  document.write("<br>");
+	document.write("<div onclick='returnInfo(" + i + ")'>");
   document.write("<img src='" + tourGuides[i].flag + "'/>");
-  document.write(tourGuides[i].location)
-  document.write("<br><br>");
+  document.write(tourGuides[i].location);
   document.write("</div>");
+  document.write("<br><br>");
 }
