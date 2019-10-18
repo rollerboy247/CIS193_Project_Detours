@@ -6,7 +6,7 @@ var reviews = [
 
 function setUpTable(){
 	//Remove this line if you want the array to save.
-	window.localStorage.clear();
+	//window.localStorage.clear();
 
 	
 	if (localStorage.getItem("saveReviews") != null) {
