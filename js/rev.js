@@ -109,8 +109,6 @@ function appendReviews(){
 	}
 	catch(message){
 		window.alert(message);
-		document.getElementById('form34').value="";
-		document.getElementById('form8').value="";
 		verifiedRev=false;
 	}
 	finally{
@@ -125,6 +123,7 @@ function appendReviews(){
 			document.getElementById('form34').value="";
 			document.getElementById('form8').value="";
 			localStorage.setItem("saveReviews", JSON.stringify(reviews));
+			$('#modalReviewForm').trigger('click');
 			setUpPage();
 		}
 	}
