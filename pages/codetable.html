@@ -27,7 +27,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- CSS !Keep this at the end of head element -->
-    <link rel="stylesheet" href="../css/contact.css" >
+    <link rel="stylesheet" href="../css/codetable.css" >
     <!-- load a JSON of country codes, courtesy of Yasir Iqbal, retrieved from GitHub, https://github.com/yasiriqbal776/AndroidHelper/blob/master/countries.json#L1161 -->
     <script src="../js/countrycodes.js"></script>
   </head>
@@ -38,13 +38,14 @@
 		<div style="margin-top: 100px;"></div>
 		<!---------- Navigation Bar ---------->
 
-		<div class="container-fluid" id="contactContents">
-			<div id="left">
-			<script src="../js/contact.js"></script>
-			</div>
-			<div id="right">
-					Click on the flags to the left to display info about tour guides, or leave us a message.
-			</div>
+		<div class="container-fluid" id="codediv">
+      <table id="codetable">
+        <tr>
+          <th>Country</th>
+          <th>Code</th>
+        </tr>
+        <script src="../js/codetable.js"></script>
+      </table>
 		</div>
 
 
