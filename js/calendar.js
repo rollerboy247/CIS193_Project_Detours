@@ -15,6 +15,7 @@ function nextMonth() {
 	}
 	currentMonth = monthsOfYear[monthNum]
 	fillCalendar();
+	if (selectedTour !== "") {setUpTour(selectedTour);}
 }
 
 function lastMonth() {
@@ -30,6 +31,7 @@ function lastMonth() {
 	}
 	currentMonth = monthsOfYear[monthNum];
 	fillCalendar();
+	if (selectedTour !== "") {setUpTour(selectedTour);}
 }
 
 function eraseCalendar() {
@@ -39,6 +41,8 @@ function eraseCalendar() {
 		if (weekRow.style.display === "block") {
 			for (i = 7; i >= 1; i--) {
 				document.getElementById('r' + n + 'd' + i).getElementsByTagName('div')[0].innerHTML = "";
+				document.getElementById('r' + n + 'd' + i).getElementsByTagName('div')[1].innerHTML = "";
+				document.getElementById('r' + n + 'd' + i).getElementsByTagName('div')[1].removeAttribute("class");
 			}
 			weekRow.style.display = 'none';
 		}
