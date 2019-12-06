@@ -78,6 +78,17 @@ body {
     border-color: #f08573;
 }
 
+div.tour-time {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 32.5%;
+    background-color: #f08573;
+    color: white;
+    padding: 4px;
+    font-weight: bolder;
+}
+
 
 /************ GALLERY **************/
 
@@ -95,43 +106,57 @@ div.cal-gallery {
     background-size: cover;
 }
 div.overlay {
-    visibility: hidden;
+    display: none;
     position: absolute;
     width: 100%;
     height: 200px;
     background-color: rgba(0,0,0,0.4);
-}
-div.overlay p {
     color: white;
     font-weight: bolder;
     text-transform: uppercase;
-    position: relative;
-    top: 30%;
+    text-align: center;
+    padding-top: 35%;
 }
 div.cal-gallery:hover > div.overlay {
-    visibility: visible;
+    display: block;
+    cursor: pointer;
+}
+div#korea-overlay,
+div#germany-overlay,
+div#japan-overlay,
+div#sanfrancisco-overlay,
+div#cambridge-overlay,
+div#washingtondc-overlay,
+div#vancouver-overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(240, 133, 115, 0.8);
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 35%;
 }
 div#cal-korea {
-    background-image: url(../img/bg-showcase-1.jpg);
-}
-div#korea-overlay p {
-    left: 36%;
+    background-image: url(../img/cal-korea-bg.jpg);
 }
 div#cal-germany {
-    background-image: url(../img/bg-showcase-2.jpg);
-}
-div#germany-overlay p {
-    left: 33%;
+    background-image: url(../img/cal-germany-bg.jpg);
 }
 div#cal-japan {
-    background-image: url(../img/bg-showcase-3.jpg);
-}
-div#japan-overlay p {
-    left: 40%;
+    background-image: url(../img/cal-japan-bg.jpg);
 }
 div#cal-sanfrancisco {
-    background-image: url(../img/sanfrancisco-1.jpg);
+    background-image: url(../img/cal-sanfrancisco-bg.jpg);
 }
-div#sanfrancisco-overlay p {
-    left: 20%;
+div#cal-cambridge {
+    background-image: url(../img/cal-cambridge-bg.jpg);
+}
+div#cal-washingtondc {
+    background-image: url(../img/cal-washingtondc-bg.jpg);
+}
+div#cal-vancouver {
+    background-image: url(../img/cal-vancouver-bg.jpg);
 }
