@@ -271,14 +271,8 @@ a.waves-effect, a.waves-light {
   float: right;
   text-align:center;
   font-size: 32px;
-  padding: 12% 0;
+  padding: 25% 0;
   background-color: lightgrey;
-}
-
-#right.sticky {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 100px;
 }
 /* Contact Us CSS */
 =======

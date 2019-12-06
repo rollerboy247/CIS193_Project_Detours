@@ -5,10 +5,6 @@ var reviews = [
 ];
 
 function setUpTable(){
-	//Remove this line if you want the array to save.
-	window.localStorage.clear();
-
-	
 	if (localStorage.getItem("saveReviews") != null) {
 		// retrieving our data and converting it back into an array
 		var retrievedData = localStorage.getItem("saveReviews");
@@ -113,8 +109,6 @@ function appendReviews(){
 	}
 	catch(message){
 		window.alert(message);
-		document.getElementById('form34').value="";
-		document.getElementById('form8').value="";
 		verifiedRev=false;
 	}
 	finally{
@@ -129,6 +123,7 @@ function appendReviews(){
 			document.getElementById('form34').value="";
 			document.getElementById('form8').value="";
 			localStorage.setItem("saveReviews", JSON.stringify(reviews));
+			$('#modalReviewForm').trigger('click');
 			setUpPage();
 		}
 	}

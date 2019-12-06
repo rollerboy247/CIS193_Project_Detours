@@ -111,14 +111,14 @@
 		
 	<section class="testimonials text-center bg-light">
       <div class="container">
-        <h1 class="mb-5">Recommended Reviews</h1>
+        <h1 class="mb-5" onclick = "window.localStorage.removeItem('saveReviews');">Recommended Reviews</h1>
        	  <!---------- Table ----------> 
 		<table id="reviewtable" style="width:1000px;">
 			
 		</table>
     </section>
 	<!---------- Comment Form  ---------->
-	<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="padding-top: 50px;">
+	<div class="modal fade" id="modalReviewForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="padding-top: 50px;">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 			  <div class="modal-header text-center">
@@ -143,14 +143,14 @@
 
 			  </div>
 			  <div class="modal-footer d-flex justify-content-center">
-				<button id="submitForm" class="btn btn-unique" data-dismiss="modal">Submit <i class="fas fa-paper-plane-o ml-1"></i></button>
+				<button id="submitForm" class="btn btn-unique">Submit <i class="fas fa-paper-plane-o ml-1"></i></button>
 			  </div>
 			</div>
 		</div>
 	</div>
 
 <div class="text-center">
-  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Write a Review</a>
+  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalReviewForm">Write a Review</a>
 </div>
 		
 
