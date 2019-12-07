@@ -785,7 +785,7 @@ input, select, textarea {
 		-webkit-overflow-scrolling: touch;
 		position: relative;
 		float: right;
-		width: 22.5em;
+		width: 25em;
 		height: 100%;
 		background: #fff;
 		outline: 0;
@@ -815,7 +815,7 @@ input, select, textarea {
 
 		body.fullscreen #main {
 			visibility: hidden;
-			right: -22.5em;
+			right: -25em;
 		}
 
 		body.is-preload-1 #main {
@@ -826,11 +826,11 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#main {
-				width: 19em;
+				width: 23.5em;
 			}
 
 				body.fullscreen #main {
-					right: -19em;
+					right: -23.5em;
 				}
 
 		}
@@ -1047,7 +1047,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease, width 0.75s ease;
 		position: absolute;
 		top: 0;
-		width: calc(100% - 22.5em);
+		width: calc(100% - 23.5em);
 		height: 100%;
 		left: 0;
 		display: flex;
@@ -1221,7 +1221,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#viewer {
-				width: calc(100% - 19em);
+				width: calc(100% - 23em);
 			}
 
 		}
@@ -1409,3 +1409,8 @@ h1::-webkit-scrollbar-thumb:hover {
 	background: rgb(51, 122, 183); 
 }
 
+/* Map */
+#map {
+	height: 600px;
+	width: 100%;
+}
