@@ -68,15 +68,15 @@ var data = [
     ],
     "sublocations": [
     "King's College",
-    "2", 
-    "3", 
-    "4"
+    "Amazing Building", 
+    "River Cam", 
+    "Bridge of Sighs"
     ], 
     "stories": [
-        "Story 1.",
-        "Story 2.",
-        "Story 3.",
-        "Story 4."
+        "This is the famous King's College known for its chapel!",
+        "Look at the architecture of the buildings!",
+        "Let's go punting!",
+        "See the legendary Bridge of Sighs!"
     ]},
 
     {
