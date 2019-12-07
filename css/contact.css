@@ -454,6 +454,12 @@ a.waves-effect, a.waves-light {
 #left div {
   cursor: pointer;
 }
+
+#right img {
+  width: 225px;
+  height: auto;
+}
+
 #destination, #name, #email, #phone, #country {
   width: 500px;
 }
