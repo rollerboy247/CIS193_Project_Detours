@@ -11,18 +11,18 @@ var data = [
         "01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg"
     ],
     "sublocations": [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
+    "San Francisco!",
+    "Hyde Street and Alcatraz",
+    "Panoramic View",
+    "Victorian Architecture",
+    "Embarcadero Ferry Building",
+    "The Mission Neighborhood",
+    "Lombard Street",
+    "Best Food in the West"
     ],
     "stories": [
         "See all the best sites in San Francisco on a fixie!",
-        "Wave hi as you zoom past cable cars riders while ascending Hyde Street.",
+        "Wave hi as you zoom past cable car riders while ascending Hyde Street.",
         "Take in the full panorama of San Francisco and the Bay Area atop Twin Peaks.",
         "Soak up S.F.’s unique architecture while riding through Haight/Ashbury.",
         "We’ll start our day at the famous Ferry Building Farmer’s Market.",
