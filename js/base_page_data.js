@@ -46,7 +46,7 @@ var data = [
     "Capitol Building",
     "Original Bill of Rights",
     "Martin Luther King Jr. Memorial",
-    "4"
+    "1789 Restaurant"
     ],
     "stories": [
         "Hi! I’m Thomas, and I’ll be your tour guide as we travel around Washington, D.C.  There is so much to see and do in Washington, but we’ll spend the day visiting four sites in particular.  We’re going to look at some sites on the Mall, and work our way to dinner in Georgetown. First, we’ll visit the Capitol Building, home to the US Congress.  Did you know that the Supreme Court used to hold session in this building as well?",
