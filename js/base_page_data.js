@@ -1,8 +1,8 @@
 var data = [
     {
     "agentId": "tb0",
-    "agentName": "Todd Brotze", 
-    "mainLocation": "San Francisco, California", 
+    "agentName": "Todd Brotze",
+    "mainLocation": "San Francisco, California",
     "facebook": "https://www.facebook.com/",
     "linkedIn": "https://www.linkedin.com/",
     "github": "https://www.github.com/",
@@ -12,14 +12,14 @@ var data = [
     ],
     "sublocations": [
     "",
-    "", 
-    "", 
+    "",
+    "",
     "",
     "",
     "",
     "",
     ""
-    ], 
+    ],
     "stories": [
         "See all the best sites in San Francisco on a fixie!",
         "Wave hi as you zoom past cable cars riders while ascending Hyde Street.",
@@ -33,8 +33,8 @@ var data = [
 
     {
     "agentId": "tz1",
-    "agentName": "Thomas Zumberge", 
-    "mainLocation": "Washington D.C.", 
+    "agentName": "Thomas Zumberge",
+    "mainLocation": "Washington D.C.",
     "facebook": "https://www.facebook.com/",
     "linkedIn": "https://www.linkedin.com/",
     "github": "https://www.github.com/",
@@ -44,21 +44,21 @@ var data = [
     ],
     "sublocations": [
     "Capitol Building",
-    "Original Bill of Rights", 
-    "Martin Luther King Jr. Memorial", 
+    "Original Bill of Rights",
+    "Martin Luther King Jr. Memorial",
     "4"
-    ], 
+    ],
     "stories": [
-        "Hi! I’m Thomas, and I’ll be your tour guide as we travel around Washington, D.C.  There is so much to see and do in Washington, but we’ll spend the day visiting four sites in particular.  We’re going to look at some sites on the Mall, and work our way to dinner in Georgetown. First, we’ll visit the Capitol Building, home to the US Congress.  Did you know that the Supreme Court used to hold session in this building as well? We’ll work our way west toward the Washington Monument where we’ll stop by the National Archives Museum to see the original copy of the Bill of Rights.  Next, we’ll head towards the Lincoln Memorial and check out the Martin Luther King Jr. Memorial.  Just a few steps away from this memorial is where Martin Luther King Jr. delivered his famous “I Have a Dream” speech.  By now, we’ll be pretty tired of walking, and we’ll want to catch a cab up the Potomac to Georgetown where we’ll have dinner at 1789 restaurant, named for the year in which the US Constitution went into effect.  Join me for a great time in historic Washington D.C",
-        "Hi! I’m Thomas, and I’ll be your tour guide as we travel around Washington, D.C.  There is so much to see and do in Washington, but we’ll spend the day visiting four sites in particular.  We’re going to look at some sites on the Mall, and work our way to dinner in Georgetown. First, we’ll visit the Capitol Building, home to the US Congress.  Did you know that the Supreme Court used to hold session in this building as well? We’ll work our way west toward the Washington Monument where we’ll stop by the National Archives Museum to see the original copy of the Bill of Rights.  Next, we’ll head towards the Lincoln Memorial and check out the Martin Luther King Jr. Memorial.  Just a few steps away from this memorial is where Martin Luther King Jr. delivered his famous “I Have a Dream” speech.  By now, we’ll be pretty tired of walking, and we’ll want to catch a cab up the Potomac to Georgetown where we’ll have dinner at 1789 restaurant, named for the year in which the US Constitution went into effect.  Join me for a great time in historic Washington D.C",
-        "Hi! I’m Thomas, and I’ll be your tour guide as we travel around Washington, D.C.  There is so much to see and do in Washington, but we’ll spend the day visiting four sites in particular.  We’re going to look at some sites on the Mall, and work our way to dinner in Georgetown. First, we’ll visit the Capitol Building, home to the US Congress.  Did you know that the Supreme Court used to hold session in this building as well? We’ll work our way west toward the Washington Monument where we’ll stop by the National Archives Museum to see the original copy of the Bill of Rights.  Next, we’ll head towards the Lincoln Memorial and check out the Martin Luther King Jr. Memorial.  Just a few steps away from this memorial is where Martin Luther King Jr. delivered his famous “I Have a Dream” speech.  By now, we’ll be pretty tired of walking, and we’ll want to catch a cab up the Potomac to Georgetown where we’ll have dinner at 1789 restaurant, named for the year in which the US Constitution went into effect.  Join me for a great time in historic Washington D.C",
-        "Hi! I’m Thomas, and I’ll be your tour guide as we travel around Washington, D.C.  There is so much to see and do in Washington, but we’ll spend the day visiting four sites in particular.  We’re going to look at some sites on the Mall, and work our way to dinner in Georgetown. First, we’ll visit the Capitol Building, home to the US Congress.  Did you know that the Supreme Court used to hold session in this building as well? We’ll work our way west toward the Washington Monument where we’ll stop by the National Archives Museum to see the original copy of the Bill of Rights.  Next, we’ll head towards the Lincoln Memorial and check out the Martin Luther King Jr. Memorial.  Just a few steps away from this memorial is where Martin Luther King Jr. delivered his famous “I Have a Dream” speech.  By now, we’ll be pretty tired of walking, and we’ll want to catch a cab up the Potomac to Georgetown where we’ll have dinner at 1789 restaurant, named for the year in which the US Constitution went into effect.  Join me for a great time in historic Washington D.C"
+        "Hi! I’m Thomas, and I’ll be your tour guide as we travel around Washington, D.C.  There is so much to see and do in Washington, but we’ll spend the day visiting four sites in particular.  We’re going to look at some sites on the Mall, and work our way to dinner in Georgetown. First, we’ll visit the Capitol Building, home to the US Congress.  Did you know that the Supreme Court used to hold session in this building as well?",
+        "We’ll work our way west toward the Washington Monument where we’ll stop by the National Archives Museum to see the original copy of the Bill of Rights.",
+        "Next, we’ll head towards the Lincoln Memorial and check out the Martin Luther King Jr. Memorial.  Just a few steps away from this memorial is where Martin Luther King Jr. delivered his famous “I Have a Dream” speech.",
+        "By now, we’ll be pretty tired of walking, and we’ll want to catch a cab up the Potomac to Georgetown where we’ll have dinner at 1789 restaurant, named for the year in which the US Constitution went into effect.  Join me for a great time in historic Washington D.C"
     ]},
 
     {
     "agentId": "kh2",
-    "agentName": "Karen Ha", 
-    "mainLocation": "Cambridge, U.K.", 
+    "agentName": "Karen Ha",
+    "mainLocation": "Cambridge, U.K.",
     "facebook": "https://www.facebook.com/",
     "linkedIn": "https://www.linkedin.com/",
     "github": "https://www.github.com/",
@@ -68,10 +68,10 @@ var data = [
     ],
     "sublocations": [
     "King's College",
-    "2", 
-    "3", 
+    "2",
+    "3",
     "4"
-    ], 
+    ],
     "stories": [
         "Story 1.",
         "Story 2.",
@@ -81,8 +81,8 @@ var data = [
 
     {
     "agentId": "jl3",
-    "agentName": "John Li", 
-    "mainLocation": "Vancouver, B.C.", 
+    "agentName": "John Li",
+    "mainLocation": "Vancouver, B.C.",
     "facebook": "https://www.facebook.com/",
     "linkedIn": "https://www.linkedin.com/",
     "github": "https://www.github.com/",
@@ -92,10 +92,10 @@ var data = [
     ],
     "sublocations": [
     "1",
-    "2", 
-    "3", 
+    "2",
+    "3",
     "4"
-    ], 
+    ],
     "stories": [
         "Story 1.",
         "Story 2.",
@@ -105,27 +105,27 @@ var data = [
 
     {
     "agentId": "jw4",
-    "agentName": "Jason Wu", 
-    "mainLocation": "Kyoto, Japan", 
+    "agentName": "Jason Wu",
+    "mainLocation": "Kyoto, Japan",
     "facebook": "",
     "linkedIn": "https://www.linkedin.com/",
     "github": "https://www.github.com/",
     "email": "https://mail.google.com/",
     "imgLocations": [
-        "01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", 
+        "01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg",
         "06.jpg", "07.jpg", "08.jpg", "09.jpg"
     ],
     "sublocations": [
     "Kyoto Station's futuristic design",
-    "Kyoto Tower's panoramic view", 
-    "Explore the Nishiki Market", 
-    "International Manga Museum", 
-    "Atmospheric Dining at Pontocho", 
-    "Philosopher's Path", 
+    "Kyoto Tower's panoramic view",
+    "Explore the Nishiki Market",
+    "International Manga Museum",
+    "Atmospheric Dining at Pontocho",
+    "Philosopher's Path",
     "Maruyama Park and its cherry blossoms",
-    "Venture through the Fushimi Inari-taisha Shrine",  
+    "Venture through the Fushimi Inari-taisha Shrine",
     "Mt. Kurama's hot springs"
-    ], 
+    ],
     "stories": [
         "Contrast to tourists' image of Kyoto as the capital of traditional Japan, Kyoto Station's futuristic design and atmosphere attempts to convey historical Kyoto through modern aesthetics. This massive station has two sides. On the north side, the Karamsuma side leads downtown to many hotels, shops and Kyoto Tower. The southern Hachijo side is much calmer and leads to more bus stops as well as some temples. The station is a greate starting point, especially providing the general Tourist Information Center that offers multilingual staff and free internet access.",
         "Across from Kyoto Station, we have Kyoto Tower. This is Kyoto's tallest structure and is a modern iconic landmark of the city. Standing 100 meters above ground, tourists are allowed a 360 degree view of Kyoto even reaching Osaka if the skies allow.",
@@ -140,8 +140,8 @@ var data = [
 
     {
     "agentId": "at5",
-    "agentName": "Anthony Trau", 
-    "mainLocation": "Hong Kong", 
+    "agentName": "Anthony Trau",
+    "mainLocation": "Hong Kong",
     "facebook": "https://www.facebook.com/",
     "linkedIn": "https://www.linkedin.com/",
     "github": "https://www.github.com/",
@@ -151,10 +151,10 @@ var data = [
     ],
     "sublocations": [
     "1",
-    "2", 
-    "3", 
+    "2",
+    "3",
     "4"
-    ], 
+    ],
     "stories": [
         "Story 1.",
         "Story 2.",
@@ -164,8 +164,8 @@ var data = [
 
     {
     "agentId": "jh6",
-    "agentName": "John Hosmillo", 
-    "mainLocation": "Uganda", 
+    "agentName": "John Hosmillo",
+    "mainLocation": "Uganda",
     "facebook": "https://www.facebook.com/",
     "linkedIn": "https://www.linkedin.com/",
     "github": "https://www.github.com/",
@@ -175,10 +175,10 @@ var data = [
     ],
     "sublocations": [
     "Lake Mburo National Park",
-    "Kampala Walking Tour", 
-    "Kasubi Tombs", 
+    "Kampala Walking Tour",
+    "Kasubi Tombs",
     "Gorilla Safari - Bwindi Impenetrable Forest"
-    ], 
+    ],
     "stories": [
         "A day tour to Lake Mburo National Park is perfect for visitors who want a taste of Uganda’s wildlife in just one day",
         "Gain an intimate overview of vibrant Kampala on a walking tour led by a local, ideal for first-time visitors to the Ugandan capital. Tick off a combination of top attractions and hidden gems, including the Nakasero Market, Kampala Hindu Temple, and the iconic Taxi Park, and benefit from the small-group size for more personalized attention from your local guide.",
