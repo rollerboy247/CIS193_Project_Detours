@@ -603,10 +603,6 @@ input, select, textarea {
 		padding-left: 1em;
 	}
 
-		ul li {
-			padding-left: 0.5em;
-		}
-
 		ul.alt {
 			list-style: none;
 			padding-left: 0;
@@ -1346,20 +1342,30 @@ div#navigation {
 	}
 }
 
-
 #header > .image.avatar {
 	margin: 0 0 1em 0;
 	width: 6.25em;
 }
 
-h1 > img {
-	height: 100px;
-	width: 100px;
+header > h1{
+	display: flex;
+	box-sizing: border-box;
+	overflow-x: scroll;
+}
+
+
+h1 > a > img {
 	border-radius:100%;
+}
+
+h2 {
+	font-size: 40px;
 }
 
 .thumbnail > img {
 	height: 122.5px;
+	width: 122.5px;
+	max-width: none;
 	object-fit: cover;
 }
 
@@ -1370,3 +1376,36 @@ html {
 body {
 	overflow: hidden;
 }
+
+div.caption > p {
+	font-size: 20px!important;
+	color: #fff!important;
+}
+
+.modal-backdrop {
+	z-index: 1001;
+}
+
+/* header scrollbar*/
+/* width */
+h1::-webkit-scrollbar {
+	height: 10px;
+}
+
+/* Track */
+h1::-webkit-scrollbar-track {
+	background: #cee6ff; 
+	border-radius: 5px;
+}
+
+/* Handle */
+h1::-webkit-scrollbar-thumb {
+	background: rgb(85, 85, 85);
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+h1::-webkit-scrollbar-thumb:hover {
+	background: rgb(51, 122, 183); 
+}
+
