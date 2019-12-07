@@ -55,14 +55,14 @@ tr:nth-child(even) {
 }
 
 /* Navigation List Styles */
-#shopping-nav {
+.nav-bar {
 	background-color: #f08573;
 	padding: 10px;
 	border-radius: 0;
 	margin: 0;
 }
 
-#shopping-nav-brand {
+.navbar-brand {
 	color: #ffffff;
 	font-family: Open Sans, sans-serif;
 	padding-left: 300px;
