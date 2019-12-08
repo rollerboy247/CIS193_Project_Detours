@@ -159,6 +159,38 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
 		<script src="../js/loadNav.js"></script>
 		<script src="../js/loadFooter.js"></script>
+		<script language="javascript">
+			if (location.search) {
+				var queryData = location.search;
+				queryData = queryData.substring(1, queryData.length);
+				var tourLocation = queryData.slice(queryData.lastIndexOf('=') + 1);
+				var tickets = queryData.slice(queryData.indexOf('=') + 1, queryData.indexOf("&"));
+				switch (tourLocation) {
+					case "sanfrancisco":
+						document.getElementById('qnt_1').value = tickets;
+						break;
+					case "washingtondc":
+						document.getElementById('qnt_2').value = tickets;
+						break;
+					case "cambridge":
+						document.getElementById('qnt_3').value = tickets;
+						break;
+					case "vancouver":
+						document.getElementById('qnt_4').value = tickets;
+						break;
+					case "japan":
+						document.getElementById('qnt_5').value = tickets;
+						break;
+					case "hongkong":
+						document.getElementById('qnt_6').value = tickets;
+						break;
+					case "uganda":
+						document.getElementById('qnt_7').value = tickets;
+						break;
+				}
+				CalculateItemsValue();
+			}
+		</script>
 	</body>
 
 </html>
