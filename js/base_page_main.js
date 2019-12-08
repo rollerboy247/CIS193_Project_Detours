@@ -454,7 +454,6 @@ var main = (function($) { var _ = {
 								s.loaded = true;
 
 						}
-
 					// Add to slides array.
 						_.slides.push(s);
 
@@ -493,7 +492,6 @@ var main = (function($) { var _ = {
 			});
 
 	},
-
 	/**
 	 * Switch to a specific slide.
 	 * @param {integer} index Index.

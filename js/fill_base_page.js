@@ -140,6 +140,7 @@ function changePage(tempId) {
     changeHeader();
     // base_page_main.js
     main.initViewer();
+    main.initEvents();
     clickFirstThumbnail();
     document.getElementsByClassName("icons")[0].innerHTML = "";
     fillIcons();
