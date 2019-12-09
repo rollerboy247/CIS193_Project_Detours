@@ -16,12 +16,13 @@ var contactInfo = [];
 //create eventListener for country input
 var listener;
 
-//hard-code data which will be input into objects representing each tour guide
+var imgArray = ["tb.png", "tz-mod.png", "kh-mod.png", "jl.png", "jw-mod.png", "at-mod.png", "jh-mod.png"];
 var namesArray = ["Todd Brotze", "Thomas Zumberge", "Karen Ha", "John Li", "Jason Wu", "Anthony Trau", "John Hosmillo"];
 var locationsArray = ["San Francisco, California", "Washington, D.C.", "Cambridge, United Kingdom", "Vancouver, Canada", "Kyoto, Japan", "Hong Kong, China", "Uganda"];
 var emailsArray = ["tbrotze@detours.com", "tzumberge@detours.com", "kha@detours.com", "jli@detours.com", "jwu@detours.com", "atrau@detours.com", "jhosmillo@detours.com"]
 var flagsArray = ["../img/flags/usa.png", "../img/flags/usa.png", "../img/flags/uk.png", "../img/flags/canada.png", "../img/flags/japan.png", "../img/flags/hongkong.png", "../img/flags/uganda.png", ]
 var phoneNumber = 1000;
+var bgArray = ["rgb(8,94,115)", "rgb(46,88,115)", "red", "rgb(88,125,56)", "rgb(88,176,224)", "rgb(74,140,177)", "rgb(80,175,182)"];
 
 //fill an array of tour guide objects with data from the above arrays
 var tourGuides = [];
@@ -35,10 +36,15 @@ for(i=0; i < namesArray.length; i++) {
 }
 
 function returnInfo(index) {
-  document.getElementById("right").innerHTML = tourGuides[index].name + "<br>"
+  document.getElementById("right").innerHTML = "<img src=../img/base_page/avatars/" + imgArray[index] + "><br>"
+    + tourGuides[index].name + "<br>"
     + tourGuides[index].location + "<br>"
     + "<a href='mailto:" + tourGuides[index].email + "?Subject=I want to tour " + tourGuides[index].location + "'>" + tourGuides[index].email + "</a>" + "<br>"
     + "(626)555-" + tourGuides[index].phoneNumber + "<br>";
+
+    theDiv = document.getElementById("right");
+    theDiv.style.background = bgArray[index];
+    theDiv.style.color = "white";
 }
 
 function makeGrey(index) {
@@ -214,6 +220,8 @@ function contactValidation() {
 
 function createContactForm() {
   contactForm = document.getElementById("right");
+  contactForm.style.color = "black";
+  contactForm.style.background = "lightgrey";
   contactFormString = "<h2 id='heading'>Fields with * are required</h2><br>";
   contactFormString += "<form id='contact-form'>";
   contactFormString += "<label>*Select a destination:</label><br>";
@@ -289,19 +297,51 @@ function handleContactClick() {
   listen();
 }
 
-//create clickable Contact Us on the left
-document.write("<div id='contactForm' onclick='handleContactClick()'>");
-document.write("<br>");
-document.write("<img src='../img/contact-form.png'>");
-document.write("Contact Form");
-document.write("<br><br>");
-document.write("</div>");
+var contactForm = document.createElement("div");
+contactForm.setAttribute('id', "contactForm");
+contactForm.setAttribute("onclick", "handleContactClick()");
+var contactIcon = document.createElement("img");
+contactIcon.setAttribute("src", "../img/contact-form.png");
+var br = document.createElement("br");
+contactForm.appendChild(contactIcon);
+//contactForm.appendChild(br);
+document.getElementById("left").appendChild(contactForm);
+contactForm.innerHTML += "Contact Form" + "<br>";
 
-for(i=0; i < tourGuides.length; i++) { //create clickable flags on the left
+//create clickable Contact Us on the left
+//document.write("<div id='contactForm' onclick='handleContactClick()'>");
+//document.write("<br>");
+//document.write("<img src='../img/contact-form.png'>");
+//document.write("Contact Form");
+//document.write("<br><br>");
+//document.write("</div>");
+
+for(i=0; i < tourGuides.length; i++) {
+  var thisDiv = document.createElement("div");
+  thisDiv.setAttribute("id", i);
+  thisDiv.setAttribute("onclick", "handleClick("+i+")");
+  var flagIcon = document.createElement("img");
+  flagIcon.setAttribute("src", tourGuides[i].flag);
+  thisDiv.innerHTML += "<br>"
+  thisDiv.appendChild(flagIcon);
+  //thisDiv.appendChild(br);
+  document.getElementById("left").appendChild(thisDiv);
+  thisDiv.innerHTML += tourGuides[i].location + "<br><br>";
+}
+
+/*for(i=0; i < tourGuides.length; i++) { //create clickable flags on the left
 	document.write("<div id='" + i + "' onclick='handleClick(" + i + ")'>");
   document.write("<br>");
   document.write("<img src='" + tourGuides[i].flag + "'/>");
   document.write(tourGuides[i].location)
   document.write("<br><br>");
+  thisDiv.
   document.write("</div>");
+}*/
+
+var url_string = window.location;
+var url = new URL(url_string);
+if (/[?&]x=/.test(url.search)) {
+  var x = url.searchParams.get("x");
+  handleClick(x);
 }
