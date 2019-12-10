@@ -120,11 +120,11 @@ var data = [
     "Kyoto Tower's panoramic view", 
     "Explore the Nishiki Market", 
     "International Manga Museum", 
-    "Atmospheric Dining at Pontocho", 
+    "Pontocho, Nakagyo", 
     "Philosopher's Path", 
     "Maruyama Park and its cherry blossoms",
     "Venture through the Fushimi Inari-taisha Shrine",  
-    "Mt. Kurama's hot springs"
+    "Mt. Kurama's establishment hot springs"
     ], 
     "stories": [
         "Contrast to tourists' image of Kyoto as the capital of traditional Japan, Kyoto Station's futuristic design and atmosphere attempts to convey historical Kyoto through modern aesthetics. This massive station has two sides. On the north side, the Karamsuma side leads downtown to many hotels, shops and Kyoto Tower. The southern Hachijo side is much calmer and leads to more bus stops as well as some temples. The station is a greate starting point, especially providing the general Tourist Information Center that offers multilingual staff and free internet access.",

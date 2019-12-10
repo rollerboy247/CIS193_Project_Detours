@@ -25,7 +25,9 @@ function fillArticles() {
         var newArticle = document.createElement('article');
         var newAnchor = document.createElement('a');
         newAnchor.className = "thumbnail thumbnailPlaces";
+        newAnchor.setAttribute('id', tempId);
         newAnchor.setAttribute('href', tempFolder + tempImg[i]);
+        newAnchor.setAttribute('onclick', "changeMap(this.id)")
         var newImage = document.createElement('img');
         // replace below with string concat with 'i' for image source
         newImage.setAttribute('src', tempFolder + tempImg[i]);
@@ -51,7 +53,7 @@ function fillHeader() {
         newAnchor.className = "thumbnail thumbnailImage";
         newAnchor.id = avatars[i];
         newAnchor.setAttribute('href', "#");
-        newAnchor.setAttribute('onclick', "changePage(this.id)");
+        newAnchor.setAttribute('onclick', "changePage(this.id);changeMap(this.id)");
         var newImage = document.createElement('img');
         newImage.setAttribute('src', "../img/base_page/avatars/" + avatarImages[i]);
         newImage.setAttribute('alt', "");
