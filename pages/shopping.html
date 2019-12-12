@@ -58,87 +58,96 @@
 		<!---------- Navigation Bar ---------->
 
 		<!---------PUT YOUR STUFF HERE---------->
-
-		<nav class="nav-bar" id="shopping-nav">
-			<div class="container">
-				<a class="navbar-brand" href="#" id="shopping-nav-brand">Enjoy unconventional tours at conventional places today!</a>
-				<div class="navbar-right">
-					<div class="container minicart"></div>
+		
+		<div class="container-fluid" id="shopping-brand">
+			<p id="shopping-brand-text">Enjoy unconventional tours at conventional places today!</p>
+		</div>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6" id="shopping-grid-1">
+					<div>
+						<img src="../img/sprite.png" alt="cart sprite" id="cart-sprite"/>
+						<h1>Your Shopping Cart</h1>
+						<p>Thank you for choosing Detours! Just a one more stop, and you're on your way!</p>
+					</div>
+				</div>
+				<div class="col-md-6" id="shopping-grid-2">
+					<div id="col-md-7-col-sm-12">
+					  <div>
+					  <br>
+					  <table>
+						<tr>
+						  <th><font size="4">Detours</font></th>
+						  <th><font size="4">Price</font></th>
+						  <th><font size="4">Quantity</font></th>
+						</tr>
+						<tr>
+						  <td><font size="4">San Francisco, CA</font></td>
+						  <td><font size="4">$500.00</font></td>
+						  <td><form><font size="4"><input name="qnt_1" type="text" size="5" id="qnt_1" value="0" size="3" data-price="500" onkeyup="CalculateItemsValue()"></font></form></td>
+						</tr>
+						<tr>
+						  <td><font size="4">Washington D.C., MD</font></td>
+						  <td><font size="4">$800.00</font></td>
+						  <td><form><font size="4"><input name="qnt_2" type="text" size="5" id="qnt_2" value="0" size="3" data-price="800" onkeyup="CalculateItemsValue()"></font></form></td>
+						</tr>
+						<tr>
+						  <td><font size="4">Cambridge, UK</font></td>
+						  <td><font size="4">$1800.00</font></td>
+						  <td><form><font size="4"><input name="qnt_3" type="text" size="5" id="qnt_3" value="0" size="3" data-price="1800" onkeyup="CalculateItemsValue()"></font></form></td>
+						</tr>
+						<tr>
+						  <td><font size="4">Vancouver, B.C.</font></td>
+						  <td><font size="4">$1000.00</font></td>
+						  <td><form><font size="4"><input name="qnt_4" type="text" size="5" id="qnt_4" value="0" size="3" data-price="1000" onkeyup="CalculateItemsValue()"></font></form></td>
+						</tr>
+						<tr>
+						  <td><font size="4">Kyoto, Japan</font></td>
+						  <td><font size="4">$1200.00</font></td>
+						  <td><form><font size="4"><input name="qnt_5" type="text" size="5" id="qnt_5" value="0" size="3" data-price="1200" onkeyup="CalculateItemsValue()"></font></form></td>
+						</tr>
+						<tr>
+						  <td><font size="4">Hong Kong</font></td>
+						  <td><font size="4">$1300.00</font></td>
+						  <td><form><font size="4"><input name="qnt_6" type="text" size="5" id="qnt_6" value="0" size="3" data-price="1300" onkeyup="CalculateItemsValue()"></font></form></td>
+						</tr>
+						<tr>
+						  <td><font size="4">Uganda</font></td>
+						  <td><font size="4">$1500.00</font></td>
+						  <td><form><font size="4"><input name="qnt_7" type="text" size="5" id="qnt_7" value="0" size="3" data-price="1500" onkeyup="CalculateItemsValue()"></font></form></td>
+						</tr>
+					  </table>
+					  </div>
+					</div>
+					<br/>
+					<div class="row">
+						<div class="col-md-6">
+						
+						</div>
+						<div class="col-md-4">
+							<div id="Totals">
+							  <div>
+								<table>
+								  <tr>
+									<td><font size="4"><strong>Total Cost</strong></font></td>
+									<td><font size="4"><strong><div id="ItemsTotal">$0</div></strong></td>
+								  </tr>
+								</table>
+							  </div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<button type="button"><font size="5"><a href="../pages/payment.html">Order</a></font></button>
+						</div>
+					</div>
 				</div>
 			</div>
-		</nav>
-
-		<div id="col-md-5 col-sm-12">
-		  <div style="position: relative; left: 200px; bottom: 10px;">
-		  <div id="bigcart"></div>
-		  <h1>Your Shopping Cart</h1>
-		  <p>Thank you for choosing Detours! Just a one more stop, and you're on your way!</p>
-		</div>
 		</div>
 
-		<div id="col-md-7 col-sm-12">
-		  <div style="position: relative; left:875px; bottom:300px;">
-		  <br>
-		  <table>
-		    <tr>
-		      <th><font size="4">Detours</font></th>
-		      <th><font size="4">Price</font></th>
-		      <th><font size="4">Quantity</font></th>
-		    </tr>
-		    <tr>
-		      <td><font size="4">San Francisco, CA</font></td>
-		      <td><font size="4">$500.00</font></td>
-		      <td><form><font size="4"><input name="qnt_1" type="text" size="5" id="qnt_1" value="0" size="3" data-price="500" onkeyup="CalculateItemsValue()"></font></form></td>
-		    </tr>
-		    <tr>
-		      <td><font size="4">Washington D.C., MD</font></td>
-		      <td><font size="4">$800.00</font></td>
-		      <td><form><font size="4"><input name="qnt_2" type="text" size="5" id="qnt_2" value="0" size="3" data-price="800" onkeyup="CalculateItemsValue()"></font></form></td>
-		    </tr>
-		    <tr>
-		      <td><font size="4">Cambridge, UK</font></td>
-		      <td><font size="4">$1800.00</font></td>
-		      <td><form><font size="4"><input name="qnt_3" type="text" size="5" id="qnt_3" value="0" size="3" data-price="1800" onkeyup="CalculateItemsValue()"></font></form></td>
-		    </tr>
-		    <tr>
-		      <td><font size="4">Vancouver, B.C.</font></td>
-		      <td><font size="4">$1000.00</font></td>
-		      <td><form><font size="4"><input name="qnt_4" type="text" size="5" id="qnt_4" value="0" size="3" data-price="1000" onkeyup="CalculateItemsValue()"></font></form></td>
-		    </tr>
-		    <tr>
-		      <td><font size="4">Kyoto, Japan</font></td>
-		      <td><font size="4">$1200.00</font></td>
-		      <td><form><font size="4"><input name="qnt_5" type="text" size="5" id="qnt_5" value="0" size="3" data-price="1200" onkeyup="CalculateItemsValue()"></font></form></td>
-		    </tr>
-		    <tr>
-		      <td><font size="4">Hong Kong</font></td>
-		      <td><font size="4">$1300.00</font></td>
-		      <td><form><font size="4"><input name="qnt_6" type="text" size="5" id="qnt_6" value="0" size="3" data-price="1300" onkeyup="CalculateItemsValue()"></font></form></td>
-		    </tr>
-		    <tr>
-		      <td><font size="4">Uganda</font></td>
-		      <td><font size="4">$1500.00</font></td>
-		      <td><form><font size="4"><input name="qnt_7" type="text" size="5" id="qnt_7" value="0" size="3" data-price="1500" onkeyup="CalculateItemsValue()"></font></form></td>
-		    </tr>
-		  </table>
-		  </div>
-		</div>
+		
 
-		<div id="Totals">
-		  <div style="position:relative; left:1055px; bottom:300px;">
-		  <br>
-		    <table>
-		      <tr>
-		        <td><font size="4"><strong>Total Cost</strong></font></td>
-		        <td><font size="4"><strong><div id="ItemsTotal">$0</div></strong></td>
-		      </tr>
-		    </table>
-		  </div>
-		</div>
-
-		<div style="position:relative; left: 875px; bottom: 340px;">
-		  <button type="button"><font size="5"><a href="../pages/payment.html">Order</a></font></button>
-		</div>
+		
 		<!---------PUT YOUR STUFF HERE---------->
 
 
