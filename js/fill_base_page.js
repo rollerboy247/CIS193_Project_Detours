@@ -27,7 +27,7 @@ function fillArticles() {
         newAnchor.className = "thumbnail thumbnailPlaces";
         newAnchor.setAttribute('id', tempId);
         newAnchor.setAttribute('href', tempFolder + tempImg[i]);
-        newAnchor.setAttribute('onclick', "changeMap(this.id)")
+        newAnchor.setAttribute('onclick', "changeMap(this)");
         var newImage = document.createElement('img');
         // replace below with string concat with 'i' for image source
         newImage.setAttribute('src', tempFolder + tempImg[i]);
@@ -53,7 +53,7 @@ function fillHeader() {
         newAnchor.className = "thumbnail thumbnailImage";
         newAnchor.id = avatars[i];
         newAnchor.setAttribute('href', "#");
-        newAnchor.setAttribute('onclick', "changePage(this.id);changeMap(this.id)");
+        newAnchor.setAttribute('onclick', "changePage(this.id);");
         var newImage = document.createElement('img');
         newImage.setAttribute('src', "../img/base_page/avatars/" + avatarImages[i]);
         newImage.setAttribute('alt', "");
@@ -114,6 +114,7 @@ function fillIcons() {
         document.getElementsByClassName("icons")[0].appendChild(newList);
     }
 }
+
 
 function changeArticles(tempId) {
     // Erase thumbnails section to call function to fill again, number of pictures may be different for agents

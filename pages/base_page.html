@@ -35,7 +35,6 @@
 		<!---------- Navigation Bar ---------->
 
 		<!---------PUT YOUR STUFF HERE---------->
-
 		<div id="main">
 			<header id="header">
 				<h1></h1>
@@ -50,6 +49,10 @@
 
 			</section>
 		</div>
+		<div class="mapContainer">
+				<div id="map1"></div>
+				<div id="map2"></div>
+			</div>
 
 		<!---------PUT YOUR STUFF HERE---------->
 
@@ -81,6 +84,14 @@
 		
 		<script src="../js/loadNav.js"></script>
 		<script src="../js/loadFooter.js"></script>
+		<!-- geocode portion -->
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<!-- exclude async defer -->
+			
+		<!-- GOOGLE CLOUD PLATFORM FOR API KEY-->
+		<!-- https://console.cloud.google.com/google/maps-apis/ -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=APIKEYHERE&callback=initMap"></script>
+		<script src="../js/base_page_map.js"></script>
 
 	</body>
 

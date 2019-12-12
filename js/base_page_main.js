@@ -395,7 +395,7 @@ var main = (function($) { var _ = {
 
 					// Switch to this thumbnail's slide.
 						_.switchTo($this.data('index'));
-
+					changeMap(this.id);
 				});
 
 		// Create slides from thumbnails.
