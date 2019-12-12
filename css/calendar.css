@@ -82,13 +82,21 @@ div.tour-time {
     width: 60%;
     margin: auto;
     text-align: center;
-    margin-top: 32.5%;
+    margin-top: 25%;
     background-color: #f08573;
     color: white;
     padding: 4px;
     font-weight: bolder;
 }
-
+div.add-to-cart {
+    text-align: center;
+    margin-top: 2px;
+}
+div.add-to-cart input:last-of-type {
+    clear: both;
+    width: 60%;
+    margin: auto;
+}
 
 /************ GALLERY **************/
 
@@ -100,7 +108,7 @@ div.cal-gallery {
     position: relative;
     margin: 2px;
     height: 150px;
-    width: 175px;
+    width: 160px;
     float: left;
     overflow: hidden;
     background-size: cover;
@@ -115,14 +123,14 @@ div.overlay {
     font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 35%;
+    padding-top: 40%;
 }
 div.cal-gallery:hover > div.overlay {
     display: block;
     cursor: pointer;
 }
-div#korea-overlay,
-div#germany-overlay,
+div#hongkong-overlay,
+div#uganda-overlay,
 div#japan-overlay,
 div#sanfrancisco-overlay,
 div#cambridge-overlay,
@@ -137,13 +145,13 @@ div#vancouver-overlay {
     font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 35%;
+    padding-top: 40%;
 }
-div#cal-korea {
-    background-image: url(../img/cal-korea-bg.jpg);
+div#cal-hongkong {
+    background-image: url(../img/cal-hongkong-bg.jpg);
 }
-div#cal-germany {
-    background-image: url(../img/cal-germany-bg.jpg);
+div#cal-uganda {
+    background-image: url(../img/cal-uganda-bg.jpg);
 }
 div#cal-japan {
     background-image: url(../img/cal-japan-bg.jpg);

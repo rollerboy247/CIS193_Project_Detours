@@ -40,9 +40,13 @@ function eraseCalendar() {
 		var weekRow = document.getElementById('week' + n);
 		if (weekRow.style.display === "block") {
 			for (i = 7; i >= 1; i--) {
-				document.getElementById('r' + n + 'd' + i).getElementsByTagName('div')[0].innerHTML = "";
-				document.getElementById('r' + n + 'd' + i).getElementsByTagName('div')[1].innerHTML = "";
-				document.getElementById('r' + n + 'd' + i).getElementsByTagName('div')[1].removeAttribute("class");
+				var calDayDiv = document.getElementById('r' + n + 'd' + i);
+				calDayDiv.getElementsByTagName('div')[0].innerHTML = "";
+				calDayDiv.getElementsByTagName('div')[1].innerHTML = "";
+				calDayDiv.getElementsByTagName('div')[1].removeAttribute("class");
+				if (calDayDiv.getElementsByTagName('div')[2]) {
+					calDayDiv.getElementsByTagName('div')[2].remove();
+				}
 			}
 			weekRow.style.display = 'none';
 		}

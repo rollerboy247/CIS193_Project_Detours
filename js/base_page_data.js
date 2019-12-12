@@ -1,8 +1,8 @@
 var data = [
     {
     "agentId": "tb0",
-    "agentName": "Todd Brotze", 
-    "mainLocation": "San Francisco, California", 
+    "agentName": "Todd Brotze",
+    "mainLocation": "San Francisco, California",
     "facebook": "https://www.facebook.com/",
     "linkedIn": "https://www.linkedin.com/",
     "github": "https://www.github.com/",
@@ -22,7 +22,7 @@ var data = [
     ], 
     "stories": [
         "See all the best sites in San Francisco on a fixie!",
-        "Wave hi as you zoom past cable cars riders while ascending Hyde Street.",
+        "Wave hi as you zoom past cable car riders while ascending Hyde Street.",
         "Take in the full panorama of San Francisco and the Bay Area atop Twin Peaks.",
         "Soak up S.F.’s unique architecture while riding through Haight/Ashbury.",
         "We’ll start our day at the famous Ferry Building Farmer’s Market.",
@@ -33,8 +33,8 @@ var data = [
 
     {
     "agentId": "tz1",
-    "agentName": "Thomas Zumberge", 
-    "mainLocation": "Washington D.C.", 
+    "agentName": "Thomas Zumberge",
+    "mainLocation": "Washington D.C.",
     "facebook": "https://www.facebook.com/",
     "linkedIn": "https://www.linkedin.com/",
     "github": "https://www.github.com/",
@@ -57,8 +57,8 @@ var data = [
 
     {
     "agentId": "kh2",
-    "agentName": "Karen Ha", 
-    "mainLocation": "Cambridge, U.K.", 
+    "agentName": "Karen Ha",
+    "mainLocation": "Cambridge, U.K.",
     "facebook": "https://www.facebook.com/",
     "linkedIn": "https://www.linkedin.com/",
     "github": "https://www.github.com/",
@@ -81,8 +81,8 @@ var data = [
 
     {
     "agentId": "jl3",
-    "agentName": "John Li", 
-    "mainLocation": "Vancouver, B.C.", 
+    "agentName": "John Li",
+    "mainLocation": "Vancouver, B.C.",
     "facebook": "https://www.facebook.com/",
     "linkedIn": "https://www.linkedin.com/",
     "github": "https://www.github.com/",
@@ -105,14 +105,14 @@ var data = [
 
     {
     "agentId": "jw4",
-    "agentName": "Jason Wu", 
-    "mainLocation": "Kyoto, Japan", 
+    "agentName": "Jason Wu",
+    "mainLocation": "Kyoto, Japan",
     "facebook": "",
     "linkedIn": "",
     "github": "https://www.github.com/",
     "email": "",
     "imgLocations": [
-        "01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", 
+        "01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg",
         "06.jpg", "07.jpg", "08.jpg", "09.jpg"
     ],
     "sublocations": [
@@ -140,8 +140,8 @@ var data = [
 
     {
     "agentId": "at5",
-    "agentName": "Anthony Trau", 
-    "mainLocation": "Hong Kong", 
+    "agentName": "Anthony Trau",
+    "mainLocation": "Hong Kong",
     "facebook": "https://www.facebook.com/",
     "linkedIn": "https://www.linkedin.com/",
     "github": "https://www.github.com/",
@@ -164,8 +164,8 @@ var data = [
 
     {
     "agentId": "jh6",
-    "agentName": "John Hosmillo", 
-    "mainLocation": "Uganda", 
+    "agentName": "John Hosmillo",
+    "mainLocation": "Uganda",
     "facebook": "https://www.facebook.com/",
     "linkedIn": "https://www.linkedin.com/",
     "github": "https://www.github.com/",

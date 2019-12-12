@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Landing Page v5.0.6 (https://startbootstrap.com/template-overviews/landing-page)
+ * Start Bootstrap - Landing Page v5.5px.6 (https://startbootstrap.com/template-overviews/landing-page)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
@@ -275,5 +275,7 @@ a.waves-effect, a.waves-light {
   background-color: lightgrey;
 }
 /* Contact Us CSS */
-=======
->>>>>>> Stashed changes
+
+.carousel-caption>h4, .carousel-caption>h5, .carousel-caption>p{
+	text-shadow: -1px -1px 5px black, 1px -1px 5px black, -1px 1px 5px black, 1px 1px 5px black;
+}

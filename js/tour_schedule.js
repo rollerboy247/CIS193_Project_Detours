@@ -97,8 +97,12 @@ function eraseTours() {
 		var weekRow = document.getElementById('week' + n);
 		if (weekRow.style.display === "block") {
 			for (i = 7; i >= 1; i--) {
-				document.getElementById('r' + n + 'd' + i).getElementsByTagName('div')[1].innerHTML = "";
-				document.getElementById('r' + n + 'd' + i).getElementsByTagName('div')[1].removeAttribute("class");
+				var calDayDiv = document.getElementById('r' + n + 'd' + i);
+				calDayDiv.getElementsByTagName('div')[1].innerHTML = "";
+				calDayDiv.getElementsByTagName('div')[1].removeAttribute("class");
+				if (calDayDiv.getElementsByTagName('div')[2]) {
+					calDayDiv.getElementsByTagName('div')[2].remove();
+				}
 			}
 		}
 		n--;
@@ -135,21 +139,24 @@ function displayTour(tourSched) {
 		var thisDay = firstDayId;
 		var thisWeek = 1;
 		console.log(monthSlice + "/" + daySlice + " @ " + (timeSlice + ampmSlice));
-		for (x = 1; x <= daySlice; x++) {
+		var x = 1;
+		while (x <= daySlice) {
 			if (thisDay <= 7) {
 				if (x === daySlice) {
-					document.getElementById('r' + thisWeek + 'd' + thisDay).getElementsByTagName('div')[1].innerHTML = timeSlice + ampmSlice;
-					document.getElementById('r' + thisWeek + 'd' + thisDay).getElementsByTagName('div')[1].setAttribute("class", "tour-time");
+					var calDayDiv = document.getElementById('r' + thisWeek + 'd' + thisDay);
+					calDayDiv.getElementsByTagName('div')[1].innerHTML = timeSlice + ampmSlice;
+					calDayDiv.getElementsByTagName('div')[1].setAttribute("class", "tour-time");
+					var cartDivHTML = '<form action="shopping.html"><fieldset id="calToCart"><label for="numTix">Tickets:&nbsp;</label><input name="ticket-quantity" id="numTix" type="number" value="1" step="1" min="1" max="8" /><input type="submit" value="Add to Cart" /><input type="hidden" name="location" value="' + selectedTour + '" /></fieldset></form>';
+					var cartDiv = document.createElement('div');
+					cartDiv.innerHTML = cartDivHTML;
+					calDayDiv.appendChild(cartDiv);
+					calDayDiv.getElementsByTagName('div')[2].setAttribute("class", "add-to-cart");
 				}
 				thisDay++;
+				x++;
 			} else {
 				thisDay = 1;
 				thisWeek++;
-				if (x === daySlice) {
-					document.getElementById('r' + thisWeek + 'd' + thisDay).getElementsByTagName('div')[1].innerHTML = timeSlice + ampmSlice;
-					document.getElementById('r' + thisWeek + 'd' + thisDay).getElementsByTagName('div')[1].setAttribute("class", "tour-time");
-				}
-				thisDay++;
 			}
 		}
 	}
@@ -168,16 +175,16 @@ function highlightLocation(loc) {
 }
 
 function setUpTour(tourName) {
-	var tourLocations = ["korea", "germany", "japan", "sanfrancisco", "cambridge", "washingtondc", "vancouver"];
+	var tourLocations = ["hongkong", "uganda", "japan", "sanfrancisco", "cambridge", "washingtondc", "vancouver"];
 	if (selectedTour === "") {selectedTour = tourName;}
 	switch (tourLocations.indexOf(tourName)) {
 		case 0:
 			highlightLocation(tourName);
-			displayTour(koreaTourSched);
+			displayTour(hongkongTourSched);
 			break;
 		case 1:
 			highlightLocation(tourName);
-			displayTour(germanyTourSched);
+			displayTour(ugandaTourSched);
 			break;
 		case 2:
 			highlightLocation(tourName);
@@ -203,24 +210,24 @@ function setUpTour(tourName) {
 }
 
 function createEventListeners() {
-	var koreaShowTours = document.getElementById('cal-korea');
-	var germanyShowTours = document.getElementById('cal-germany');
+	var hongkongShowTours = document.getElementById('cal-hongkong');
+	var ugandaShowTours = document.getElementById('cal-uganda');
 	var japanShowTours = document.getElementById('cal-japan');
 	var sanfranciscoShowTours = document.getElementById('cal-sanfrancisco');
 	var cambridgeShowTours = document.getElementById('cal-cambridge');
 	var washingtondcShowTours = document.getElementById('cal-washingtondc');
 	var vancouverShowTours = document.getElementById('cal-vancouver');
-	if (koreaShowTours.addEventListener) {
-		koreaShowTours.addEventListener('click', function() {setUpTour("korea");}, false);
-		germanyShowTours.addEventListener('click', function() {setUpTour("germany");}, false);
+	if (hongkongShowTours.addEventListener) {
+		hongkongShowTours.addEventListener('click', function() {setUpTour("hongkong");}, false);
+		ugandaShowTours.addEventListener('click', function() {setUpTour("uganda");}, false);
 		japanShowTours.addEventListener('click', function() {setUpTour("japan");}, false);
 		sanfranciscoShowTours.addEventListener('click', function() {setUpTour("sanfrancisco");}, false);
 		cambridgeShowTours.addEventListener('click', function() {setUpTour("cambridge");}, false);
 		washingtondcShowTours.addEventListener('click', function() {setUpTour("washingtondc");}, false);
 		vancouverShowTours.addEventListener('click', function() {setUpTour("vancouver");}, false);
-	} else if (koreaShowTours.attachEvent) {
-		koreaShowTours.attachEvent('onclick', function() {setUpTour("korea");});
-		germanyShowTours.attachEvent('onclick', function() {setUpTour("germany");});
+	} else if (hongkongShowTours.attachEvent) {
+		hongkongShowTours.attachEvent('onclick', function() {setUpTour("hongkong");});
+		ugandaShowTours.attachEvent('onclick', function() {setUpTour("uganda");});
 		japanShowTours.attachEvent('onclick', function() {setUpTour("japan");});
 		sanfranciscoShowTours.attachEvent('onclick', function() {setUpTour("sanfrancisco");});
 		cambridgeShowTours.attachEvent('onclick', function() {setUpTour("cambridge");});
@@ -235,12 +242,12 @@ function createEventListeners() {
 
 // global variables
 var bookingAhead = 6;
-var toursPerMonth = 9;
+var toursPerMonth = 6;
 var selectedTour = "";
 
 // create tour schedules for each Location
-var koreaTourSched = generateSchedule("korea");
-var germanyTourSched = generateSchedule("germany");
+var hongkongTourSched = generateSchedule("hongkong");
+var ugandaTourSched = generateSchedule("uganda");
 var japanTourSched = generateSchedule("japan");
 var sanfranciscoTourSched = generateSchedule("sanfrancisco");
 var cambridgeTourSched = generateSchedule("cambridge");
