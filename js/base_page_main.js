@@ -395,7 +395,7 @@ var main = (function($) { var _ = {
 
 					// Switch to this thumbnail's slide.
 						_.switchTo($this.data('index'));
-
+					changeMap(this.id);
 				});
 
 		// Create slides from thumbnails.
@@ -454,7 +454,6 @@ var main = (function($) { var _ = {
 								s.loaded = true;
 
 						}
-
 					// Add to slides array.
 						_.slides.push(s);
 
@@ -465,6 +464,7 @@ var main = (function($) { var _ = {
 
 	},
 
+	
 	/**
 	 * Initialize stuff.
 	 */
@@ -493,7 +493,6 @@ var main = (function($) { var _ = {
 			});
 
 	},
-
 	/**
 	 * Switch to a specific slide.
 	 * @param {integer} index Index.
