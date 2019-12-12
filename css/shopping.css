@@ -11,35 +11,33 @@
 */
 
 /* Left Side Commentary */
-div#col-md-5.col-sm-12 h1{
+div#shopping-grid-1 h1{
 	color: #595c5f;
 	font-size: 24px;
 	font-weight: bold;
+	text-align: center;
 	margin-bottom:30px;
-	text-align: left;
+	margin-top: 0px;
 }
 
-div#col-md-5.col-sm-12 p{
+div#shopping-grid-1 p{
 	color: #898e92;
-  font-size: 16px;
+	font-size: 16px;
 	line-height: 1.5;
-	max-width: 200px;
-	text-align: justify;
+	text-align: center;
 }
 
-div#bigcart{
-	background:url(../img/sprite.png);
-	background-position: 25px 70px;
-	background-repeat:no-repeat;
-	width: 220px;
-	height: 200px;
+img#cart-sprite{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+	width: 50%;
 }
 
 /* Right Side Processing Stuff */
-div#col-md-7.col-sm-12 table {
+div#col-md-7-col-sm-12 table {
   font-family: Open Sans, sans-serif;
-  left:80px;
-  top:20px;
   border-collapse: collapse;
   width: 100%;
 }
@@ -54,16 +52,25 @@ tr:nth-child(even) {
   background-color: #4ea6bc;
 }
 
-/* Navigation List Styles */
-.nav-bar#shopping-nav {
+#col-md-5-col-sm-12{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#shopping-brand{
 	background-color: #f08573;
-	padding: 10px;
-	border-radius: 0;
+	padding: 15px;
 	margin: 0;
 }
 
-.navbar-brand#shopping-nav {
+#shopping-brand-text{
 	color: #ffffff;
 	font-family: Open Sans, sans-serif;
-	padding-left: 300px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#shopping-grid-2{
+	max-width: 750px
 }
