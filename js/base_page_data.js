@@ -92,15 +92,15 @@ var data = [
     ],
     "sublocations": [
     "Capilano Suspension Bridge",
-    "Gastown Business Improvement Society", 
+    "Gastown", 
     "The Seawall in Vancouver", 
     "Canada Place Attraction"
     ], 
     "stories": [
-        "Story 1.",
-        "Story 2.",
-        "Story 3.",
-        "Story 4."
+        "Take a walk on the wild side. Follow in the footsteps of the millions of visitors who have crossed Capilano Suspension Bridge since 1889. Also visit other attractions like Cliffwalk and Treetop Adventures",
+        "Lively Gastown is known for its whistling Steam Clock and mix of souvenir shops, indie art galleries and decor stores in Victorian buildings. A trendy food and drink scene includes chic cocktail lounges and restaurants serving everything from gourmet sandwiches to local seafood. Hip eateries also dot the neighboring Downtown Eastside area, while the up-and-coming Railtown district is home to edgy fashion studios.",
+        "Cyclists fly by, tourists stroll, joggers cruise the paths and all Seawall denizens look out onto the bay. It's easy to see why the Seawall is Stanley Park's most famous feature. It's an impressive 8.8-kilometre (5.5-mile) paved route that loops around the park and, along with adjoining seaside pathways, connects the park to downtown Vancouver and skirts its entire inner waterfront.",
+        "Located in the heart of Vancouver’s downtown harbour front, Canada Place is an iconic national landmark welcoming local residents, visitors and ships to the West Coast. Canada Place is a multi-use facility that includes FlyOver Canada, Vancouver Convention Centre East, Pan Pacific Hotel, Port Metro Vancouver cruise ship terminal, World Trade Centre office tower and VINCI Park parkade."
     ]},
 
     {
