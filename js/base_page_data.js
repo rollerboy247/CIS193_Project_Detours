@@ -93,8 +93,8 @@ var data = [
     "sublocations": [
     "Capilano Suspension Bridge",
     "Gastown", 
-    "The Seawall in Vancouver", 
-    "Canada Place Attraction"
+    "Stanley Park's Seawall", 
+    "Canada Place"
     ], 
     "stories": [
         "Take a walk on the wild side. Follow in the footsteps of the millions of visitors who have crossed Capilano Suspension Bridge since 1889. Also visit other attractions like Cliffwalk and Treetop Adventures",
